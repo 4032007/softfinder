@@ -188,7 +188,7 @@ header{max-width:1200px;padding:0 15px 0 15px;height:115px;align-items:center;ma
 .menu-f ul{list-style-type:none;margin:0 0 0 40px;padding:0;max-width:175px}
 .menu-f ul li{margin:0 0 15px 0;padding:0;line-height:22px;background:0;font-size:16px}
 .menu-f ul li:last-child{margin-bottom:0}
-.menu-f ul li a{color:rgba(0,0,0,0.7);text-decoration:none;transitin:0.3s;}
+.menu-f ul li a{color:rgba(0,0,0,0.7);text-decoration:none;transition:0.3s;}
 .menu-f ul li a:hover{color:#365CE6}
 .menu-f ul li span{color:#365CE6}
 .right-footer{min-width:150px}
@@ -245,7 +245,7 @@ header{max-width:1200px;padding:0 15px 0 15px;height:115px;align-items:center;ma
 .body-content{display:flex}
 .content-left{width:100%;margin-right:80px}
 .content-right{min-width:260px;margin-left:auto}
-.b-sort-serv{display:flex;aligtn-items:center;margin:0 0 35px 0}
+.b-sort-serv{display:flex;align-items:center;margin:0 0 35px 0}
 .result-search-serv{font-size:18px;font-weight:500;line-height:27px}
 .rating-serv{margin-left:auto;display:flex;align-items:center}
 .rating-serv p{margin:0;padding:0;line-height:24px;color:rgba(0,0,0,0.6);margin:0 18px 0 0}
@@ -634,8 +634,6 @@ ul.list-item li:last-child{margin-bottom:0}
 .service-card p{margin-top:0;margin-bottom:30px}
 .list-service-card{display:flex;flex-wrap:wrap;margin:-30px 0 0 -30px}
 .item-serv-card{margin:30px 0 0 30px;width:138px}
-
-
 .top-service-avail{display:flex;align-items:center;margin:0 0 35px 0}
 .top-service-img{border-radius:10px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:#fff}
 .top-service-img img{display:block;max-width:100%;max-height:100%}
@@ -664,7 +662,7 @@ ul.list-item li:last-child{margin-bottom:0}
 .list-recomend{margin:0 0 20px 0}
 .list-recomend ul{list-style-type:none;margin:0;padding:0;display:flex;justify-content:space-between}
 .list-recomend ul li{position:relative;margin:0;padding:0;line-height:normal;background:0}
-.list-recomend ul li input{position:absolute;top:0;left:0;opaciti:0;width:0;height:0}
+.list-recomend ul li input{position:absolute;top:0;left:0;opacity:0;width:0;height:0}
 .list-recomend ul li label{display:block;border:1px solid rgba(0,0,0,0.1);color:#000;font-size:18px;border-radius:5px;height:70px;width:70px;display:flex;cursor:pointer;align-items:center;justify-content:center}
 .list-recomend ul li input:checked+label{border-color:#365ce6}
 .recomend-txt{display:flex;width:100%;margin:0 0 50px 0;color:rgba(0,0,0,0.6)}
