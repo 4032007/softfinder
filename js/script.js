@@ -23,12 +23,12 @@ $(function() {
 	$('.tabs-tb').each(function(){
 		$(this).find('.tab-tb').hide();
 		$(this).find('.tab-tb:eq(0)').show();
-		$(this).find('.nav-tb div:eq(0)').addClass('active');
-		$(this).find('.nav-tb div').click(function () {
+		$(this).find('.nav-tb div:eq(0), .nav-tb li:eq(0)').addClass('active');
+		$(this).find('.nav-tb div, .nav-tb li').click(function () {
 			var ind = $(this).index();
 			$(this).parents('.tabs-tb').find('.cont-tb').find('.tab-tb:eq(' + ind + ')').show().siblings('.tab-tb:visible').hide();
 			$(this).addClass('active');
-			$(this).siblings('.nav-tb div').removeClass('active')
+			$(this).siblings('.nav-tb div, .nav-tb li').removeClass('active')
 			return false;
 		});
 	});
@@ -117,8 +117,30 @@ $(function() {
 		infinite: false,
 		slidesToShow: 7,
 		slidesToScroll: 1,
-		arrows:true
-	});
+		arrows:true,
+  responsive: [
+    {
+      breakpoint: 1220,
+      settings: {
+        slidesToShow: 6
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
 
 //nav card
 	$('#nav').onePageNav();
