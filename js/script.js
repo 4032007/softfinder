@@ -169,5 +169,23 @@ $(function() {
 	
 	$('.head-accord-pl').click(function(){
 		$(this).toggleClass('active').next().toggle();
+	});
+
+//menu mobile
+	$('.close-menu').click(function(){
+		$(this).parents('.panel-menu-mobile').fadeOut();
+	});
+	$('.but-menu-mobile').click(function(){
+		$('.panel-menu-mobile').fadeIn();
 	});		
+	
+//rubric mobile
+	$('.favorite-cetegory .more-mobile').click(function(){
+		$(this).hide().parents('.favorite-cetegory').find('ul li').show();
+	});		
+	
+	$('.main-news .more-mobile').click(function(){
+		$(this).hide().parents('.main-news').find('.item-news').show();
+	});	
+
 });
