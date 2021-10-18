@@ -995,7 +995,9 @@ ul.list-item li:last-child{margin-bottom:0}
 }
 
 @media screen and (min-width: 999px) {
-.title-mobile, .more-mobile, .for-mobile, .main-for-mobile, .but-menu-mobile, .panel-menu-mobile { display:none}
+	.title-mobile,.more-mobile,.for-mobile,.main-for-mobile,.but-menu-mobile,.panel-menu-mobile{display:none}
+	.but-search-f button{text-indent:10000px}
+	.but-filters{display:none}
 }
 
 @media screen and (max-width: 999px) {
@@ -1025,7 +1027,7 @@ ul.list-item li:last-child{margin-bottom:0}
 	.favorite-cetegory .right-head-block{margin-left:0;display:block}
 	.favorite-cetegory .right-head-block .but-frame-small{margin-left:0;font-size:14px;font-weight:500}
 	.favorite-cetegory .right-head-block .but-frame-small a{display:flex;width:100%}
-	.favorite-cetegory ul li:nth-child(n+12){display: none}
+	.favorite-cetegory ul li:nth-child(n+12){display:none}
 	.title-mobile{font-size:22px;font-weight:500;line-height:24px;margin:0 0 25px 0}
 	.more-mobile{margin:0 0 15px 0;font-weight:500;text-align:center;font-size:14px;line-height:20px;color:#818181;cursor:pointer}
 	.b-serv-main{margin-bottom:45px}
@@ -1130,4 +1132,61 @@ ul.list-item li:last-child{margin-bottom:0}
 	.add-avail-p a{background:#365ce6;border-radius:5px;display:block;height:55px;color:#fff;text-decoration:none;text-align:center;line-height:55px}
 	.main-news .list-news .item-news:nth-child(n+2){display:none}
 	.top-serv-main .nav-serv{max-width:100%;overflow-y:auto;padding-bottom:15px;margin-bottom:-27px}
+	.panel-action{font-size:14px;line-height:17px;text-align:left;padding:12px 60px 12px 15px}
+	.main2 header,.main3 header{height:70px}
+	.search-head{display:none}
+	.main2{background:0}
+	.panel-top-page{padding:24px 24px 30px 24px;display:block;min-height:1px}
+	.panel-top-page .breadcrumbs{margin-bottom:4px}
+	.breadcrumbs ul{text-align:center;justify-content:center}
+	.breadcrumbs ul li{font-size:14px;line-height:21px}
+	.panel-top-page h1{font-size:26px;line-height:32px;text-align:center;margin-bottom:21px}
+	.nav-panel ul{display:block;margin-top:-6px}
+	.nav-panel ul li{font-size:12px;margin-top:6px}
+	.nav-panel ul li a{justify-content:center;min-height:35px;padding-top:2px;padding-bottom:3px; height:auto}
+	.panel-top-left{margin-bottom:10px}
+	.body-content{flex-direction:column}
+	.b-sort-serv{flex-direction:column}
+	.in-filter-serv{flex-direction:column;margin:0}
+	.sel-serv{width:100%;margin:0 0 12px 0}
+	.content-left{width:100%;margin-right:0}
+	.rating-serv{margin-left:0}
+	.b-sort-serv{position:relative;align-items:flex-start;margin-bottom:21px}
+	.result-search-serv{font-size:16px;line-height:24px;margin-bottom:17px}
+	.rating-serv{font-size:16px}
+	.but-search-f{width:100%;margin-left:0}
+	.but-search-f button{font-family:'Manrope',sans-serif;font-weight:500;width:100%;color:#fff;font-size:18px;font-weight:500;height:65px}
+	.but-search-f button:before{margin-left:40px}
+	.close-p{background-size:cover;width:20px;height:20px;margin-top:-11px}
+	.sel-serv .selectbox .dropdown{width:100%;top:49px}
+	.bot-item-search{flex-direction:column;align-items:flex-start}
+	.buts-search{margin-left:0}
+	.link-meg{font-size:14px;margin-bottom:20px;line-height:21px}
+	body{font-size:14px}
+	p,li{line-height:20px}
+	.item-search-serv{padding-left:17px;padding-right:17px;margin-bottom:15px}
+	.img-item-search{min-width:75px}
+	.but-grey a{background:#365ce6;color:#fff}
+	.item-search-serv .but-fav-serv{top:18px;right:18px}
+	.item-search-serv .premium{flex-basis:100%;margin-left:0;margin-top:7px}
+	.item-search-serv .tit-line-item-search{flex-wrap:wrap}
+	.pages{margin-top:25px}
+	.content-left{order:2}
+	.content-right{order:1;margin-left:0}
+	.block-checkbox,.b-integr{margin-bottom:20px}
+	.body-check{display:none}
+	.but-filters{position:absolute;right:0;top:0;font-size:16px;line-height:24px}
+	.but-filters a{padding:0 0 0 23px;display:inline-block;vertical-align:top;color:#585858;text-decoration:none}
+	.but-filters a:before{position:absolute;top:5px;left:0;content:'';display:block;width:17px;height:16px;background:url(images/ico-filters.svg) no-repeat}
+	#filters{display:none;margin-bottom:30px}
+	.content{padding-bottom:45px}
+	.leader-it{margin-left:10px} 
+	.link-item-search{margin-left:10px}
+	.sections{margin-top:45px}
+	.list-sections{flex-direction:column}
+	.list-sections ul { width:97%; margin-bottom:15px}
+	.list-sections ul:last-child{ margin-bottom:0}
+	.sections .title { font-size:26px; margin-bottom:15px}
+	.main3{ background:none}
+	.content h1{font-size:26px;line-height:32px;text-align:center;margin-bottom:21px}
 }

@@ -105,6 +105,7 @@
         	<div class="body-content">
             	<div class="content-left">
                 	<div class="b-sort-serv">
+                    	<div class="but-filters"><a class="scroll" href="#filters">Фильтры</a></div>
                     	<div class="result-search-serv">Найдено 40 сервисов</div>
                         
                         <div class="rating-serv">
@@ -163,7 +164,7 @@
                                     </select>
                                 </div>
                                 
-                                <div class="but-search-f"><button type="submit"></button></div>
+                                <div class="but-search-f"><button type="submit">Найти</button></div>
                             </div>
                         </form>
                     </div>
@@ -384,104 +385,106 @@
                 </div>
                 
                 <div class="content-right">
-                	<div class="block-checkbox">
-                    	<div class="head-check"><span>Подбор по параметрам</span></div>
-                        
-                        <div class="body-check">
-                        	<ul>
-                            	<li>
-                                	<input id="check1" type="checkbox" />
-                                    <label for="check1">Лидер отрасли <img src="images/ico-leader.svg" alt="" /></label>
-                                </li>
-                            </ul>
+                	<div id="filters">
+                        <div class="block-checkbox">
+                            <div class="head-check"><span>Подбор по параметрам</span></div>
+                            
+                            <div class="body-check">
+                                <ul>
+                                    <li>
+                                        <input id="check1" type="checkbox" />
+                                        <label for="check1">Лидер отрасли <img src="images/ico-leader.svg" alt="" /></label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="b-integr">
-                    	<div class="tit-int">Интеграция с</div>
-                        <div class="field-int"><input type="text" placeholder="Название сервиса" /></div>
-                    </div>
-                    
-                	<div class="block-checkbox">
-                    	<div class="head-check"><span>Платформы</span></div>
                         
-                        <div class="body-check">
-                        	<ul>
-                            	<li>
-                                	<input id="check2" type="checkbox" />
-                                    <label for="check2">Облако</label>
-                                </li>
-                            	<li>
-                                	<input checked id="check3" type="checkbox" />
-                                    <label for="check3">Мобильные приложения</label>
-                                </li>
-                            	<li>
-                                	<input id="check4" type="checkbox" />
-                                    <label for="check4">Десктопный софт</label>
-                                </li> 
-                            </ul>
+                        <div class="b-integr">
+                            <div class="tit-int">Интеграция с</div>
+                            <div class="field-int"><input type="text" placeholder="Название сервиса" /></div>
                         </div>
-                    </div>
-                    
-                	<div class="block-checkbox">
-                    	<div class="head-check"><span>Модель оплаты</span></div>
                         
-                        <div class="body-check">
-                        	<ul>
-                            	<li>
-                                	<input id="check5" type="checkbox" />
-                                    <label for="check5">Есть бесплатные тарифы</label>
-                                </li>
-                            	<li>
-                                	<input id="check6" type="checkbox" />
-                                    <label for="check6">Подписочная модель</label>
-                                </li>
-                            	<li>
-                                	<input id="check7" type="checkbox" />
-                                    <label for="check7">Подписочная модель</label>
-                                </li> 
-                            </ul>
+                        <div class="block-checkbox">
+                            <div class="head-check"><span>Платформы</span></div>
+                            
+                            <div class="body-check">
+                                <ul>
+                                    <li>
+                                        <input id="check2" type="checkbox" />
+                                        <label for="check2">Облако</label>
+                                    </li>
+                                    <li>
+                                        <input checked id="check3" type="checkbox" />
+                                        <label for="check3">Мобильные приложения</label>
+                                    </li>
+                                    <li>
+                                        <input id="check4" type="checkbox" />
+                                        <label for="check4">Десктопный софт</label>
+                                    </li> 
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    
-                	<div class="block-checkbox">
-                    	<div class="head-check"><span>Автоматизация продаж</span></div>
                         
-                        <div class="body-check">
-                        	<ul>
-                            	<li>
-                                	<input id="check8" type="checkbox" />
-                                    <label for="check8">Выставление счетов <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
-                                </li>
-                            	<li>
-                                	<input id="check9" type="checkbox" />
-                                    <label for="check9">Обработка заказов <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
-                                </li>
-                            	<li>
-                                	<input id="check10" type="checkbox" />
-                                    <label for="check10">Отчеты и аналитика <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
-                                </li> 
-                            	<li>
-                                	<input id="check11" type="checkbox" />
-                                    <label for="check11">Прогнозирование продаж <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
-                                </li>
-                            	<li>
-                                	<input id="check12" type="checkbox" />
-                                    <label for="check12">Работа с базой клиентов <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
-                                </li>
-                            	<li>
-                                	<input id="check13" type="checkbox" />
-                                    <label for="check13">Работа с документами <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
-                                </li> 
-                            	<li>
-                                	<input id="check14" type="checkbox" />
-                                    <label for="check14">Работа с задачами <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
-                                </li>
-                            	<li>
-                                	<input id="check15" type="checkbox" />
-                                    <label for="check15">Управление ценами <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
-                                </li>
-                            </ul>
+                        <div class="block-checkbox">
+                            <div class="head-check"><span>Модель оплаты</span></div>
+                            
+                            <div class="body-check">
+                                <ul>
+                                    <li>
+                                        <input id="check5" type="checkbox" />
+                                        <label for="check5">Есть бесплатные тарифы</label>
+                                    </li>
+                                    <li>
+                                        <input id="check6" type="checkbox" />
+                                        <label for="check6">Подписочная модель</label>
+                                    </li>
+                                    <li>
+                                        <input id="check7" type="checkbox" />
+                                        <label for="check7">Подписочная модель</label>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="block-checkbox">
+                            <div class="head-check"><span>Автоматизация продаж</span></div>
+                            
+                            <div class="body-check">
+                                <ul>
+                                    <li>
+                                        <input id="check8" type="checkbox" />
+                                        <label for="check8">Выставление счетов <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
+                                    </li>
+                                    <li>
+                                        <input id="check9" type="checkbox" />
+                                        <label for="check9">Обработка заказов <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
+                                    </li>
+                                    <li>
+                                        <input id="check10" type="checkbox" />
+                                        <label for="check10">Отчеты и аналитика <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
+                                    </li> 
+                                    <li>
+                                        <input id="check11" type="checkbox" />
+                                        <label for="check11">Прогнозирование продаж <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
+                                    </li>
+                                    <li>
+                                        <input id="check12" type="checkbox" />
+                                        <label for="check12">Работа с базой клиентов <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
+                                    </li>
+                                    <li>
+                                        <input id="check13" type="checkbox" />
+                                        <label for="check13">Работа с документами <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
+                                    </li> 
+                                    <li>
+                                        <input id="check14" type="checkbox" />
+                                        <label for="check14">Работа с задачами <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
+                                    </li>
+                                    <li>
+                                        <input id="check15" type="checkbox" />
+                                        <label for="check15">Управление ценами <div class="ask-ico"><div class="die-ask">IP-телефония позволяет осуществлять виртуальные вызовы и повышать эффективность работы предприятия.  Сервисы IP-телефонии объединяют всех сотрудников компании в общую сеть. Это удобно, если предприятие меняет адрес или открывает новый филиал.</div></div></label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
