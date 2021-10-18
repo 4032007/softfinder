@@ -186,6 +186,18 @@ $(function() {
 	
 	$('.main-news .more-mobile').click(function(){
 		$(this).hide().parents('.main-news').find('.item-news').show();
-	});	
-
+	});
+	
+//scroll
+	$('.scroll').click(function(event){
+		$('#filters').toggle();
+		event.preventDefault();
+		var full_url = this.href;
+		var parts = full_url.split("#");
+		var trgt = parts[1];
+		var target_offset = $("#"+trgt).offset();
+		var target_top = target_offset.top - 15;
+		$('html, body').animate({scrollTop:target_top}, 1000);
+		
+	});
 });
