@@ -54,8 +54,7 @@ $(function() {
 			$(this).find('.headcol').css({height:tr})
 		})
 		}, 100);
-	}
-	
+	}	
 	table();
 	
 //gallery card
@@ -96,7 +95,6 @@ $(function() {
 			}
 		})
 	}
-	
 	text();
 	
 	$('.more-text a').click(function(){
@@ -120,24 +118,14 @@ $(function() {
 		arrows:true,
   responsive: [
     {
-      breakpoint: 1220,
+      breakpoint: 1300,
       settings: {
         slidesToShow: 6
       }
     },
     {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
+      breakpoint: 999,
+      settings: "unslick"
     }
   ]
 });
