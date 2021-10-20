@@ -80,6 +80,7 @@
             
         	<div class="body-content">
             	<div class="content-left">
+                	<div class="but-filters but-f-int"><a class="scroll" href="#filters">Фильтры</a></div>
                     <div class="filter-serv">
                     	<form>
                         	<div class="in-filter-serv">
@@ -103,7 +104,7 @@
                                     </select>
                                 </div>
                                 
-                                <div class="but-search-f"><button type="submit"></button></div>
+                                <div class="but-search-f"><button type="submit">Найти</button></div>
                             </div>
                         </form>
                     </div>
@@ -366,31 +367,33 @@
                 </div>
                 
                 <div class="content-right">
-                	<div class="title">Подбор по параметрам</div>
-                    
-                    <div class="b-integr">
-                    	<div class="tit-int">Подбор по сервису</div>
-                        <div class="field-int"><input type="text" placeholder="Название сервиса" /></div>
-                    </div>
-                    
-                	<div class="block-checkbox">
-                    	<div class="head-tit">Тип компании</div>
+                	<div id="filters">
+                        <div class="title">Подбор по параметрам</div>
                         
-                        <div class="body-check">
-                        	<ul>
-                            	<li>
-                                	<input id="check2" type="checkbox" />
-                                    <label for="check2">Фрилансер</label>
-                                </li>
-                            	<li>
-                                	<input id="check3" type="checkbox" />
-                                    <label for="check3">Веб-студия</label>
-                                </li>
-                            	<li>
-                                	<input id="check4" type="checkbox" />
-                                    <label for="check4">Рекламное агентство</label>
-                                </li> 
-                            </ul>
+                        <div class="b-integr">
+                            <div class="tit-int">Подбор по сервису</div>
+                            <div class="field-int"><input type="text" placeholder="Название сервиса" /></div>
+                        </div>
+                        
+                        <div class="block-checkbox">
+                            <div class="head-tit">Тип компании</div>
+                            
+                            <div class="body-check body-nohide">
+                                <ul>
+                                    <li>
+                                        <input id="check2" type="checkbox" />
+                                        <label for="check2">Фрилансер</label>
+                                    </li>
+                                    <li>
+                                        <input id="check3" type="checkbox" />
+                                        <label for="check3">Веб-студия</label>
+                                    </li>
+                                    <li>
+                                        <input id="check4" type="checkbox" />
+                                        <label for="check4">Рекламное агентство</label>
+                                    </li> 
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
