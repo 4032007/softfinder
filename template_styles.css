@@ -97,6 +97,7 @@ header{max-width:1200px;padding:0 15px 0 15px;height:115px;align-items:center;ma
 .logo-serv img{display:block;max-height:100%}
 .tit-serv{font-weight:500;margin:0 0 16px 0;font-size:20px;line-height:27px;color:#081339}
 .tit-serv a{color:#081339;text-decoration:none}
+.tit-serv a:hover{color: #365CE6;}
 .item-serv p{line-height:22px;margin:0 0 24px 0;padding:0;color:rgba(8,19,57,0.7)}
 .link-serv{margin:0 0 24px 0}
 .link-serv a{position:relative;padding:0 0 0 19px;text-decoration:none}
@@ -116,6 +117,7 @@ header{max-width:1200px;padding:0 15px 0 15px;height:115px;align-items:center;ma
 .bt-serv{display:flex;align-items:center}
 .but-fav-serv{margin:0 0 0 26px}
 .but-fav-serv a{display:block;width:27px;height:24px;background:url(images/ico-favor.png) no-repeat}
+.but-fav-serv a.active{background:url(images/ico-favor1_2.png) no-repeat}
 .but-frame-big{font-size:16px;font-weight:500;text-align:center}
 .but-frame-big a{padding:0 17px 0 17px;transition:0.3s;min-width:358px;text-align:center;text-decoration:none;border:1px solid rgba(54,92,230,0.1);display:inline-flex;align-items:center;justify-content:center;line-height:22px;height:60px;border-radius:5px}
 .but-frame-big a:hover{background:#365ce6;color:#fff;border-color:#365ce6}
@@ -217,6 +219,7 @@ header{max-width:1200px;padding:0 15px 0 15px;height:115px;align-items:center;ma
 .choice-h span{position:absolute;top:-6px;right:-6px;font-weight:500;font-size:10px;width:13px;height:13px;line-height:13px;background:#365ce6;border-radius:50%;color:#fff;text-align:center}
 .favor-h{margin:0 0 0 16px}
 .favor-h a{display:block;width:23px;height:20px;background:url(images/ico-favor2.png) no-repeat}
+.favor-h a.active{background:url(images/ico-favor2_2.png) no-repeat}
 .main2 header, .main3 header{margin-bottom:0;height:85px}
 .main2 .right-head, .main3 .right-head{margin-left:auto}
 .main2 .right-head .but-coms-top, .main3 .right-head .but-coms-top{margin-left:16px}
@@ -282,11 +285,14 @@ header{max-width:1200px;padding:0 15px 0 15px;height:115px;align-items:center;ma
 .item-search-serv:hover{background:#fff;box-shadow:0 10px 120px rgba(0,0,0,0.08);border-color:#fff}
 .item-search-serv .but-fav-serv{position:absolute;top:29px;right:25px}
 .item-search-serv .but-fav-serv a{background:url(images/ico-favor3.png) no-repeat}
+.item-search-serv .but-fav-serv a.active{background:url(images/ico-favor3_2.png) no-repeat}
 .top-item-search{display:flex;align-items:center;margin:0 0 20px 0}
 .img-item-search{width:75px;height:75px;margin-right:20px;display:flex;align-items:center;justify-content:center;border-radius:3px;background:#fff;overflow:hidden}
 .img-item-search img{display:block;margin:0 auto;max-width:100%;max-height:100%;border-radius:3px}
 .tit-line-item-search{display:flex;align-items:center;margin:0 0 7px 0}
 .tit-item-search{font-size:20px;font-weight:600;line-height:27px}
+.tit-item-search a{color:#000; text-decoration: none}
+.tit-item-search a:hover{color: #365CE6}
 .link-item-search{margin:2px 0 0 15px}
 .link-item-search a{display:block;width:12px;height:14px;background:url(images/open-link.svg) no-repeat}
 .premium{position:relative;top:1px;color:#06c43b;font-size:14px;font-weight:500;margin:0 0 0 15px;padding:0 0 0 20px}
@@ -675,10 +681,10 @@ ul.list-item li:last-child{margin-bottom:0}
 .item-rec-txt{line-height:22px}
 .item-rec-txt:last-child{margin-left:auto}
 .field-a{margin:0 0 30px 0}
-.field-a label{display:block;line-height:22px;font-weight:500;margin:0 0 10px 20px}
+.field-a label{display:block;line-height:22px;font-weight:500;margin:0 0 10px 0}
 .field-a input{display:block;width:100%;padding:0 20px 0 20px;border:1px solid rgba(0,0,0,0.1);font-family:'Manrope',sans-serif;font-size:16px;border-radius:5px;outline:0;height:50px;background:0}
 .textarea-a{margin:0 0 30px 0}
-.textarea-a label{display:block;line-height:22px;font-weight:500;margin:0 0 10px 20px}
+.textarea-a label{display:block;line-height:22px;font-weight:500;margin:0 0 10px 0}
 .textarea-a textarea{display:block;width:100%;padding:10px 20px 10px 20px;border:1px solid rgba(0,0,0,0.1);font-family:'Manrope',sans-serif;font-size:16px;border-radius:5px;outline:0;resize:none;height:212px;overflow-y:auto;background:0}
 .textarea-a2 textarea{height:149px}
 .button-a{margin:30px 0 0 0}
@@ -1001,7 +1007,7 @@ ul.list-item li:last-child{margin-bottom:0}
 	.title-mobile,.more-mobile,.for-mobile,.main-for-mobile,.but-menu-mobile,.panel-menu-mobile{display:none}
 	.but-search-f button{text-indent:10000px}
 	.but-filters{display:none}
-	.menu-card ul{justify-content:space-between}
+	.menu-card ul{}
 }
 
 @media screen and (max-width: 999px) {
