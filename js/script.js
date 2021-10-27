@@ -188,4 +188,11 @@ $(function() {
 		$('html, body').animate({scrollTop:target_top}, 1000);
 		
 	});
+	
+//favorite
+	$('.but-fav-serv a').click(function(){
+		$(this).toggleClass('active')
+		return false;
+	});	
+
 });
