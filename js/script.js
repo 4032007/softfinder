@@ -19,6 +19,16 @@ $(function() {
 	    event.stopPropagation();
 	});	
 	
+//search
+	$('.search-head a').click(function(){
+		$('.wr-search').fadeIn(500)
+		return false;
+	})
+	
+	$('.close-search').click(function(){
+		$('.wr-search').fadeOut(500)
+	})
+	
 //tabs
 	$('.tabs-tb').each(function(){
 		$(this).find('.tab-tb').hide();
