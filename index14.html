@@ -2,690 +2,402 @@
 <html lang="ru"> 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-	<title>Сервис</title> 
+	<title>Абай Даулет</title> 
 	<meta name="description" content="" /> 
 	<meta name="keywords" content=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
 	<link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
 	<link rel="stylesheet" href="template_styles.css" type="text/css" />
-    <script src="js/jquery.selectbox.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.selectbox.min.js"></script>
 	<script src="js/slick.min.js"></script>
     <script src="js/jquery.nav.js"></script>
-    <script src="js/rating_simple.js"></script>
+	<script src="js/jquery.MultiFile.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<div class="main main2">
-        <div class="wr-search">
-            <div class="panel-search">
-                <form>
-                    <div class="body-search">
-                        <div class="field-ss"><input type="text" placeholder="Найти"/></div>
-                        <div class="but-s">
-                            <button type="submit">Найти</button>
-                        </div>
-                    </div>
-                </form>
-    
-                <div class="close-search"></div>
-            </div>
-        </div>
-		
-    	<div class="panel-menu-mobile">
-        	<div class="top-panel-menu">
-        		<div class="tit-panel">Меню</div>
-                <div class="close-menu"></div>
-            </div>
-            
-            <div class="search-panel">
+	<div class="main">
+    	<div class="panel-search">
+        	<div class="in-panel-search">
             	<form>
-                	<div class="filed-search-p">
-                    	<input type="text" placeholder="Поиск" />
-                        <button type="submit"></button>
-                    </div>
+                    <div class="field-search"><span class="close-search"></span> <input type="text" placeholder="Поиск по сайту" /></div>
+                    <div class="but-panel"><button type="submit"></button></div>
                 </form>
             </div>
-            
-            <div class="menu-panel-m">
-            	<ul>
-                    <li><a href="#">Сервисы</a></li>
-                    <li><a href="#">Рубрикатор</a></li>
-                    <li><a href="#">Интеграторы</a></li>
-                    <li><a href="#">Публикации</a></li>
-                </ul>
-            </div>
-            
-            <div class="add-avail-p"><a href="#">Добавить отзыв</a></div>
         </div>
         
-		<header>
-        	<div class="logo"><a href="/"><img src="images/logo.png" alt="" /></a></div>
-            
-            <div class="menu-top">
-                <ul>
-                    <li><span>Сервисы</span></li>
-                    <li><a href="#">Рубрикатор</a></li>
-                    <li><a href="#">Интеграторы</a></li>
-                    <li><a href="#">Публикации</a></li>
-                </ul>
-            </div>
-            
-            <div class="search-head"><a href="#"></a></div>
-            
-            <div class="right-head">
-            	<div class="choice-h"><a href="#"><span>2</span></a></div>
-                <div class="favor-h"><a href="#"></a></div>
-            	<div class="but-coms-top"><a href="#">Добавить отзыв</a></div>
-				<div class="but-menu-mobile"></div>
-            </div>
-        </header>
-        
-        <div class="wr-panel-top wr-panel-top2">
-            <div class="panel-top-page">
-                <div class="card-serv">
-               		<div class="img-card-serv"><img src="images_tmp/img-card-serv.jpg" alt="" /></div> 
-                    <div class="desc-card-serv">
-                    	<div class="top-card-serv">
-                        	<div class="tit-card-serv"><h1>Roistat</h1></div>
-                            <div class="premium">Premium</div>
-                        </div>
-                        <div class="text-card-serv">Cистема сквозной бизнес-аналитики.</div>
-                        <div class="avail-serv">
-                            <div class="stars">
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                            </div>
-                            <span>(18)</span>
-                        </div>
-                        <div class="buts-serv-card">
-                        	<div class="but-frame but-frame2"><a href="#">Веб-сайт</a></div>
-                            <div class="but-frame but-frame2 blue"><a href="#">Сравнить</a></div>
-                            <div class="but-fav-serv"><a href="#"></a></div>
-                        </div>
-                        <div class="bottom-serv-card">
-                            <div class="check-use">
-                                <input checked id="use" type="checkbox">
-                                <label for="use">Я использую</label>
-                            </div>
-                            <div class="use-serv">10 пользователей используют сервис</div>
-                        </div>
-                    </div>
+        <div class="wr-header">
+            <header>
+                <div class="logo"><a href="/">Factories.kz</a></div>
+				<div class="but-menu"></div>
+                <div class="menu-top">
+                    <ul>
+                        <li><span>Производители</span></li>
+                        <li><a href="#">Рубрикатор</a></li>
+                        <li><a href="#">Публикации</a></li>
+                    </ul>
                 </div>
-            </div>
+                <div class="header-right">
+                    <div class="but-search"><a href="#"></a></div>
+                    <div class="add-factory"><a href="#">Добавить предприятие</a></div>
+                </div>
+            </header>
         </div>
         
         <div class="content">
-        	<div class="wr-menu-card">
-                <div class="menu-card floating">
-                    <ul id="nav">
-                        <li><a href="#desc">Описание</a></li>
-                        <li><a href="#price">Цены</a></li>
-                        <li><a href="#integ">Интеграция</a></li>
-                        <li><a href="#possib">Возможности</a></li>
-                        <li><a href="#public">Публикации</a></li>
-                        <li><a href="#video">Видеоуроки</a></li>
-                        <li><a href="#comm">Отзывы</a></li>
-                        <li><a href="#analog">Аналоги</a></li>
-                    </ul>
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="#">Производители</a></li>
+                    <li><a href="#">Кызылординская область</a></li>
+                    <li><a href="#">Кызылорда</a></li>
+                    <li>Абай Даулет</li>
+                </ul>
+            </div>
+            
+            <div class="my-company">
+            	<div class="img-my-company"><img src="images_tmp/my-company.png" alt="" /></div>
+                <div class="desc-my-company">
+                	<div class="tit-my-company">
+                    	<h1>Абай Даулет</h1>  <span class="verif"></span>
+                    </div>
+                    <div class="manuf">Производитель</div>
+                    <div class="obl"><a href="#">Карагандинская обл., Караганда</a></div>
+                    <p>Производство риса, овец и кормов</p>
+                </div>
+                <div class="link-my-company"><a href="#">Это моя компания</a></div>
+            </div>
+            
+            <div class="wr-menu-c">
+            	<div class="wr-flex-m floating">
+                    <div class="menu-card">
+                        <ul id="nav">
+                            <li><a href="#about">О компании</a></li>
+                            <li><a href="#gallery">Фотогалерея</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#public">Публикации</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             
             <div class="body-card">
-            	<div id="desc" class="body-card-left">
-                	<div class="sm-tit">Описание</div>
-                    <p>Сервис собирает данные из CRM-систем, рекламных площадок и сайта, помогает находить неэффективные каналы трафика и экономить рекламный бюджет. Помимо сквозной аналитики, пользователям Roistat доступны 18 маркетинговых инструментов.</p>
+            	<div id="about" class="card-left">
+                	<div class="tit">О компании</div>
+                    <p>«Абай Даулет» — многопрофильная аграрная компания, которая занимается рисоводством, садоводством и овцеводством. Направления своей деятельности компания развивает как кластерную экономику, осуществляя полный цикл бизнеса, в том числе выращивание, переработка, реализация.</p>
                 
-                	<div class="sm-tit">Основные возможности Roistat:</div>
-                    <ol>
-                        <li>Сквозная аналитика. Отчеты и графики по 80+ бизнес-показателям, создание собственных метрик.</li>
-                        <li>Мультиканальная аналитика. Определение всех каналов трафика, которые участвовали в привлечении клиента, и распределение прибыли от сделки между ними.</li>
-                    </ol>
-                    
-                    <div class="more-link"><a href="#">Подробнее</a></div>
-                    
-                    <div class="platform"><span>Платформа:</span> Десктопный софт, Мобильные приложения, Облако</div>
-					<div class="block-service">
+                	<div class="category">
+                    	<div class="tit">Категории</div>
                         <ul>
-                            <li><a href="#">Анализ конкурентов</a></li>
-                            <li><a href="#">Мониторинг цен</a></li>
-                            <li><a href="#">Коллтрекинг</a></li>
-                            <li><a href="#">Онлайн-опросы</a></li>
-                            <li><a href="#">Email-рассылки</a></li>
+                        	<li><a href="#">Пищевая промышленность</a>
+                            	<ul>
+                                	<li><a href="#">Производство мяса и мясопродуктов</a>
+                                    	<ul>
+                                        	<li><a href="#">Мясная промышленность</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Производство мясных консервов</a>
+                                    	<ul>
+                                        	<li><a href="#">Мясная промышленность</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Сельское хозяйство</a>
+                            	<ul>
+                                	<li><a href="#">Растениеводство</a>
+                                    	<ul>
+                                        	<li><a href="#">Производство зерновых, бобовых, технических культур</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
-                	</div>
+                    </div>
                     
-                    <div id="price" class="sm-tit">Цены</div>
-                    <div class="price-card">Старт — от 7 300 ₽ в месяц.</div>
-                    <div class="params-tariff">
-                    	<ul>
-                        	<li>Имеется 14-дневный пробный период.</li>
-                        	<li>Способ оплаты: <b>По подписке</b>. </li>
+                    <div id="gallery" class="gallery-card">
+                    	<div class="tit">Фотогалерея</div>
+                        
+                        <div class="slider-gal">
+                        	<div class="slide"><a data-fancybox href="images_tmp/gallery1.jpg"><img src="images_tmp/gallery1.jpg" alt="" /></a></div>
+                            <div class="slide"><a data-fancybox href="images_tmp/gallery2.jpg"><img src="images_tmp/gallery2.jpg" alt="" /></a></div>
+                            <div class="slide"><a data-fancybox href="images_tmp/gallery3.jpg"><img src="images_tmp/gallery3.jpg" alt="" /></a></div>
+                        	<div class="slide"><a data-fancybox href="images_tmp/gallery1.jpg"><img src="images_tmp/gallery1.jpg" alt="" /></a></div>
+                            <div class="slide"><a data-fancybox href="images_tmp/gallery2.jpg"><img src="images_tmp/gallery2.jpg" alt="" /></a></div>
+                            <div class="slide"><a data-fancybox href="images_tmp/gallery3.jpg"><img src="images_tmp/gallery3.jpg" alt="" /></a></div>
+                        </div>
+                    </div>
+                    
+                    <div id="contacts" class="contacts-card">
+                    	<div class="tit">Контакты</div>
+                        <ul>
+                        	<li>
+                            	<span>Адрес:</span>
+                                <span>г. Кызылорда, ул. Бейбітшілік, №80</span>
+                            </li>
+                        	<li>
+                            	<span>Телефон:</span>
+                                <span><a href="tel:+77242254100">+7 (7242) 254100</a></span>
+                            </li>
+                        	<li>
+                            	<span>Почта:</span>
+                                <span><a href="mailto:abaydaule7@mail.ru">abaydaule7@mail.ru</a></span>
+                            </li>
+                        	<li>
+                            	<span>Сайт:</span>
+                                <span><a target="_blank" href="http://abaydaulet.kz">http://abaydaulet.kz</a></span>
+                            </li> 
                         </ul>
                     </div>
-                </div>
-                
-                <div class="body-card-right">
-                	<div class="gallery-card">
-                    	<div class="main-img">
-                        	<div class="item-mn-slide"><a data-fancybox="gallery" href="images_tmp/main-img.jpg"><img src="images_tmp/main-img.jpg" alt="" /></a></div>
-                            <div class="item-mn-slide"><a data-fancybox="gallery" href="images_tmp/main-img.jpg"><img src="images_tmp/main-img.jpg" alt="" /></a></div>
-                            <div class="item-mn-slide"><a data-fancybox="gallery" href="images_tmp/main-img.jpg"><img src="images_tmp/main-img.jpg" alt="" /></a></div>
-                            <div class="item-mn-slide"><a data-fancybox="gallery" href="images_tmp/main-img.jpg"><img src="images_tmp/main-img.jpg" alt="" /></a></div>
-                        </div>
+                    
+                    <div class="panel-info">
+                    	<div class="data">Обновление данных: 12.12.2020</div>
+                        <div class="nums">Количество просмотров: 28</div>
                         
-                        <div class="thumb-img">
-                        	<div class="item-mn-slide"><img src="images_tmp/main-thumb.jpg" alt="" /></div>
-                            <div class="item-mn-slide"><img src="images_tmp/main-thumb.jpg" alt="" /></div>
-                            <div class="item-mn-slide"><img src="images_tmp/main-thumb.jpg" alt="" /></div>
-                            <div class="item-mn-slide"><img src="images_tmp/main-thumb.jpg" alt="" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>	
-            
-            <div id="integ" class="b-integrat">
-            	<div class="title">Интеграция</div>
-                
-                <div class="slider-int">
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Мегаплан</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">КоллХелпер</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Мегаплан</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Мегаплан</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Paloma365</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">КоллХелпер</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Мегаплан</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Мегаплан</a></div>
-                    </div> 
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Мегаплан</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Мегаплан</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Paloma365</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">КоллХелпер</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Мегаплан</a></div>
-                    </div>
-                	<div class="slide">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt="" /></a></div>
-                    	<div class="tit-int"><a href="#">Мегаплан</a></div>
-                    </div> 
-                </div>
-            </div>
-            
-            <div id="possib" class="b-possible">
-            	<div class="top-possible">
-                	<div class="title">Возможности</div>
-                    <div class="check-view">
-                        <input checked id="check-posib" type="checkbox">
-                        <label for="check-posib">Показать отсутствующие функции</label>
-                    </div>
-                </div>
-                
-                <div class="list-posib">
-                	<div class="item-posib">
-                    	<div class="tit-possib">Общие</div>
-                        <div class="func-possib">
-                        	<ul>
-                                <li>Уведомления о непринятых звонках</li>
-                                <li>Отслеживание конверсий</li>
-                                <li>Отслеживание источников</li>
-                                <li>Отслеживание популярности ссылок</li>
-                                <li>Отслеживание ключевых слов</li>
-                                <li>A/B-тестирование</li>
-                            </ul>
-                        </div>
+                        <div class="link-error"><a href="#">Сообщить об ошибке</a></div>
                     </div>
                     
-                	<div class="item-posib">
-                    	<div class="tit-possib">Безопасность и конфиденциальность</div>
-                        <div class="func-possib">
-                        	<ul>
-                                <li>Доступ по протоколу HTTPS</li> 
-                                <li>Резервное копирование в нескольких местах</li>
-                                <li><s>Многофакторная авторизация</s></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                	<div class="item-posib">
-                    	<div class="tit-possib">Обратный звонок</div>
-                        <div class="func-possib">
-                        	<ul>
-                                <li>Уведомления о непринятых звонках</li>
-                                <li>Отслеживание поведения клиента</li>
-                                <li>Самообучение</li>
-                                <li>Переадресация</li>
-                                <li>Запись разговоров</li>
-                                <li>Настройка времени показа</li>
-                                <li><s>Источники трафика</s></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="public" class="b-news last-news">
-                <div class="title">Последние публикации</div>
-            
-                <div class="list-news">
-                    <div class="item-news">
-                        <div class="img-news"><a href="#"><img src="images_tmp/img-news.jpg" alt="" /></a><div class="cat-news"><a href="#">Новость</a></div></div>
-                        <div class="tit-news"><a href="#">КУБ24 разработал виджет выставления счетов в amoCRM</a></div>
-                        <div class="date-news">10 апреля 2020</div>
-                    </div>
-                    
-                    <div class="item-news">
-                        <div class="img-news"><a href="#"><img src="images_tmp/img-news.jpg" alt="" /></a><div class="cat-news"><a href="#">Новость</a></div></div>
-                        <div class="tit-news"><a href="#">Мобильное приложение ITSM 365 получило голосовые заявки</a></div>
-                        <div class="date-news">10 апреля 2020</div>
-                    </div>
-                    
-                    <div class="item-news">
-                        <div class="img-news"><a href="#"><img src="images_tmp/img-news.jpg" alt="" /></a><div class="cat-news"><a href="#">Статья</a></div></div>
-                        <div class="tit-news"><a href="#">Мобильное приложение ITSM 365 получило голосовые заявки</a></div>
-                        <div class="date-news">10 апреля 2020</div>
-                    </div>  
-                </div>
-                
-                <div class="more-link"><a href="#">Показать ещё</a></div>
-            </div>
-            
-            <div id="video" class="b-video-card">
-            	<div class="title">Видеоуроки</div>
-                
-                <div class="list-video-card">
-                	<div class="item-video-card">
-                    	<div class="img-video-c"><img src="images_tmp/img-video.jpg" alt="" /></div>
-                        <div class="title-video-c">Принцип работы Roistat</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="panel-info-card">
-           		<ul>
-                    <li class="item1">Обновлено: 20.07.2021</li>
-                    <li class="item2">Просмотры: 23</li>
-                    <li class="item3"><a href="#">Сообщить об ошибке</a></li>
-                </ul> 
-            </div>
-            
-            <div id="comm" class="b-coms-card">
-            	<div class="b-coms-left">
-                    <div class="top-coms-card">
-                        <div class="title">Отзывы</div>
+                    <div id="reviews" class="b-views">
+                    	<div class="title">Отзывы</div>
                         
-                        <div class="rating-serv">
-                            <p>Сортировать</p>
-                            
-                            <div class="rat-serv">
-                                <select>
-                                    <option>по рейтингу</option>
-                                    <option>по дате</option>
-                                    <option>по популярности</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="list-coms list-coms2">
-                        <div class="item-coms">
-                            <div class="body-coms">
-                                <div class="left-body-coms">
-                                    <div class="tit-coms">Топовый сервис!</div>
-                                    <div class="text-coms">Прекрасный сервис, жаль только манго его выкупил, боюсь снизят они его уровень до своего.</div>
-                                    
-                                    <div class="benef-coms">
-                                        <span class="plus_benef">Плюсы:</span>
-                                        <p class="benef-text">Гарантия результата, простота подключения, ИСКЛЮЧИТЕЛЬНО ОТЗЫВЧИВАЯ ТЕХ ПОДДЕРЖКА, никаких скрытых платежей.</p>
-                                        <div class="more-text"><a href="#">Подробнее</a></div>
-                                    </div>
-                                    
-                                    <div class="benef-coms">
-                                        <span class="minus_benef">Минусы:</span>
-                                        <p class="benef-text">Неудобный документооборот</p>
-                                        <div class="more-text"><a href="#">Подробнее</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bottom-big-coms">
-                                <div class="left-bot-big-coms">
-                                    <div class="photo-coms-bot"><img src="images_tmp/photo-user3.jpg" alt="" /></div>
-                                    
-                                    <div class="desc-coms-bot">
-                                        <div class="info-user-coms">Георгий Поспелов <span>7 мая 2021</span></div>
-                                        <div class="info-company-coms">
-                                            <div class="tags-company">
-                                                <ul>
-                                                    <li><span>Менеджер по продажам</span></li>
-                                                    <li><span>Гостиничный бизнес</span></li>
-                                                    <li><span>Компания: 150-200 сотрудников</span></li>
-                                                </ul>
-                                            </div>
-                                            
-                                            <div class="voite-coms">
-                                                <div class="like"><a href="#">7</a></div>
-                                                <div class="dislike"><a href="#">2</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="list-views">
+                        	<div class="item-view">
+                                <div class="nick">konst61</div>
+                                <div class="date-news">02 Февраля 2021 12:41</div>
+                                <p>Покупал тут контейнер под мастерскую. Привезли через пару дней, рассказали как просто собрать.</p>
+                                <div class="func-view">
+                                	<div class="answ-v"><a href="#">Ответить</a></div>
+                                    <div class="comments-view"><a href="#"><span>Скрыть</span><span>Показать</span> комментарии (4)</a></div>
                                 </div>
                                 
+                                <div class="block-com-view">
+                                	<div class="item-com-view">
+                                        <div class="nick">Mark</div>
+                                        <div class="date-news">02 Февраля 2021 12:41</div>
+                                        <p>Кто из мастеров вам попался?</p>
+                                        <div class="answ-v"><a href="#">Ответить</a></div>
+                                    </div>
+                                    
+                                	<div class="item-com-view">
+                                        <div class="nick">konst61</div>
+                                        <div class="date-news">02 Февраля 2021 12:41</div>
+                                        <p>Кто из мастеров вам попался?</p>
+                                        <div class="answ-v"><a href="#">Ответить</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        	<div class="item-view">
+                                <div class="nick">Виктор</div>
+                                <div class="date-news">02 Февраля 2021 12:41</div>
+                                <p>Здравствуйте!<br>
+								Нас интересует закупка посуды из стекла оптом, пришлите, пожалуйста, прайс-каталог вашей продукции.<br>
+								Спасибо!</p>
+                            </div>
+                            
+                        	<div class="item-view">
+                                <div class="nick">Журакул</div>
+                                <div class="date-news">02 Февраля 2021 12:41</div>
+                                <p>Покупал тут контейнер под мастерскую. Привезли через пару дней, рассказали как просто собрать.</p>
                             </div>
                         </div>
                         
-                        <div class="item-coms">
-                            <div class="body-coms">
-                                <div class="left-body-coms">
-                                    <div class="tit-coms">Аналитика для требовательных</div>
-                                    <div class="text-coms">В целом вещь в работе полезная, но рано или поздно придете к тому, что надо будет менять хостинг на более быстрый и объемный, потому что функционал расширяется.</div>
-                                    
-                                    <div class="benef-coms">
-                                        <span class="plus_benef">Плюсы:</span>
-                                        <p class="benef-text">отличный сервис для анализа маркетинга. строго следим за тремя каналами продвижения и во многом помогает даже отсеивать лишние рекламные запросы, не дающие конверсий. за счет этого удалось здорово оптимизировать рекламу и настроить бюджет</p>
-                                        <div class="more-text"><a href="#">Подробнее</a></div>
-                                    </div>
-                                    
-                                    <div class="benef-coms">
-                                        <span class="minus_benef">Минусы:</span>
-                                        <p class="benef-text">сложная интеграции и пришлось воевать с отделом продаж, не привыкшим расставлять метки в АМО. до конца их так и не победили, поэтому в нашем случае не вся информация по ROI корректна, но это вряд ли вина ройстат))а вот большой вес сервиса сильно замедляет работу сайта, надо либо в хостинг вкладываться, либо как-то со стороны ройстата продумать варианты ограниченного функционала, для небольших сайтов и лендингов не рекомендую этот сервис.</p>
-                                        <div class="more-text"><a href="#">Подробнее</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bottom-big-coms">
-                                <div class="left-bot-big-coms">
-                                    <div class="photo-coms-bot"><img src="images_tmp/photo-user.jpg" alt="" /></div>
-                                    
-                                    <div class="desc-coms-bot">
-                                        <div class="info-user-coms">Георгий Поспелов <span>7 мая 2021</span></div>
-                                        <div class="info-company-coms">
-                                            <div class="tags-company">
-                                                <ul>
-                                                    <li><span>Менеджер по продажам</span></li>
-                                                    <li><span>Гостиничный бизнес</span></li>
-                                                    <li><span>Компания: 150-200 сотрудников</span></li>
-                                                </ul>
-                                            </div>
-                                            
-                                            <div class="voite-coms">
-                                                <div class="like"><a href="#">7</a></div>
-                                                <div class="dislike"><a href="#">2</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="pages">
+                            <ul>
+                                <li><span>1</span></li> 
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                            <p class="naxt-page"><a href="#">Далее</a></p>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="b-coms-right">
-                	<div class="title-mobile">Отзывы</div>
-                	<div class="top-panel-coms">
-                    	<div class="stars">
-                        	<div class="active"></div>
-                            <div class="active"></div>
-                            <div class="active"></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="big-rate">3 / 5</div>
-                        <div class="nums-c">16 отзывов</div>
                     </div>
                     
-                    <div class="list-avail">
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail5" type="radio" />
-                                <label for="check-avail5">5</label>
+                    <div class="add-views">
+                    	<div class="tit">Оставить отзыв</div>
+                        
+                        <form>
+                        	<div class="fields">
+                            	<div class="field">
+                                	<label>Ваше имя</label>
+                                    <input type="text" />
+                                </div>
+                            	<div class="field">
+                                	<label>Ваш e-mail</label>
+                                    <input type="text" />
+                                </div>
                             </div>
-                            <div class="scail-avail"><span style="width:48%"></span></div>
-                            <div class="rate-avail">7/16</div>
-                        </div>
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail4" type="radio" />
-                                <label for="check-avail4">4</label>
+                            <div class="field textarea-small">
+                                <label>Текст отзыва</label>
+                                <textarea></textarea>
                             </div>
-                            <div class="scail-avail"><span style="width:35%"></span></div>
-                            <div class="rate-avail">5/16</div>
-                        </div>
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail3" type="radio" />
-                                <label for="check-avail3">3</label>
+                            <div class="button-f button-f2"><button type="submit"><span>Ответить</span></button></div>
+                            <div class="assets">Нажимая кнопку "Ответить", Вы соглашаетесь с <a target="_blank" href="#">правилами</a> нашего сайта</div>
+                        </form>
+                    </div>
+                    
+                    <div id="public" class="b-publics">
+                    	<div class="title">Публикации</div>
+                        <div class="text-publics">Новости связанные с компанией</div>
+                        
+                        <div class="list-news">
+                            <div class="item-list-news">
+                                <div class="img-list-news"><a href="#"><img src="images_tmp/list1.jpg" alt="" /></a></div>
+                                <div class="desc-list-news">
+                                    <div class="date-news">02 Февраля 2021 12:41</div>
+                                    <div class="tit-news"><a href="#">Гибкий камень: свойства, применение, самостоятельное изготовление</a></div>
+                                    <div class="pre-text-news">Словосочетание "гибкий камень" вызывает некоторое противоречие...</div>
+                                </div>
                             </div>
-                            <div class="scail-avail"><span style="width:30%"></span></div>
-                            <div class="rate-avail">4/16</div>
-                        </div>
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail2" type="radio" />
-                                <label for="check-avail2">2</label>
-                            </div>
-                            <div class="scail-avail"><span style="width:10%"></span></div>
-                            <div class="rate-avail">2/16</div>
-                        </div>
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail1" type="radio" />
-                                <label for="check-avail1">1</label>
-                            </div>
-                            <div class="scail-avail"><span style="width:0%"></span></div>
-                            <div class="rate-avail">0/16</div>
                         </div>
                     </div>
-                    <div class="button button-avail"><button type="submit">Добавить отзыв</button></div>
+                    
+                </div>
+                
+                <div class="card-right">
+                	<div class="contacts-company">
+                    	<div class="tit">Контакты компании</div>
+                        <ul>
+                        	<li>
+                            	<span>Телефон:</span>
+                                <span><a href="tel:+77242254100">+7 (7242) 254100</a></span>
+                            </li>
+                        	<li>
+                            	<span>Почта:</span>
+                                <span><a href="mailto:abaydaule7@mail.ru">abaydaule7@mail.ru</a></span>
+                            </li>
+                        	<li>
+                            	<span>Сайт:</span>
+                                <span><a target="_blank" href="http://abaydaulet.kz">http://abaydaulet.kz</a></span>
+                            </li> 
+                        </ul>
+                    </div>
                 </div>
             </div>
             
-            <div id="analog" class="b-analog">
-            	<div class="top-analog">
-                	<div class="title">Аналоги</div>
-                    <div class="but-frame but-frame2"><a href="#">Показать все</a></div>
+            <div class="b-factory">
+                <div class="head-block">
+                    <div class="title">Похожие компании</div>
+                    <div class="link-all"><a href="#">Все компании</a></div>
                 </div>
                 
-                <div class="list-serv">
-                    <div class="item-serv">
-                        <div class="logo-serv"><a href="#"><img src="images_tmp/logo-serv.png" alt="" /></a></div>
-                        <div class="tit-serv"><a href="#">Мегаплан</a></div>
-                        <p>Система управления бизнесом: CRM, контроль сотрудников, проектов и поручений, финансы</p>
-                        <div class="link-serv"><a target="_blank" href="#">Веб-сайт</a></div>
-                        <div class="avail-serv">
-                            <div class="stars">
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                            </div>
-                            <span>(18)</span>
-                        </div>
-                        <div class="bt-serv">
-                            <div class="but-frame"><a href="#">Сравнить с Roistat</a></div>
-                            <div class="but-fav-serv"><a href="#"></a></div>
+                <div class="slider-factory slider-bb">
+                    <div class="slide">
+                        <div class="item-f">
+                            <div class="img-fc"><a href="#"><img src="images_tmp/factory-none.jpg" alt="" /></a></div>
+                            <div class="tit-fc"><a href="#">Бест Гранит</a></div>
+                            <div class="locat-fc">Нур Султан</div>
                         </div>
                     </div>
                     
-                    <div class="item-serv">
-                        <div class="logo-serv"><a href="#"><img src="images_tmp/logo-serv.png" alt="" /></a></div>
-                        <div class="tit-serv"><a href="#">Мегаплан</a></div>
-                        <p>Система управления бизнесом: CRM, контроль сотрудников, проектов и поручений, финансы</p>
-                        <div class="link-serv"><a target="_blank" href="#">Веб-сайт</a></div>
-                        <div class="avail-serv">
-                            <div class="stars">
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div></div>
-                            </div>
-                            <span>(18)</span>
-                        </div>
-                        <div class="bt-serv">
-                            <div class="but-frame"><a href="#">Сравнить с Roistat</a></div>
-                            <div class="but-fav-serv"><a href="#"></a></div>
+                    <div class="slide">
+                        <div class="item-f">
+                            <div class="img-fc"><a href="#"><img src="images_tmp/factory1.png" alt="" /></a></div>
+                            <div class="tit-fc"><a href="#">Северский<br> гранитный карьер</a></div>
+                            <div class="locat-fc">Алма-Ата</div>
                         </div>
                     </div>
                     
-                    <div class="item-serv">
-                        <div class="logo-serv"><a href="#"><img src="images_tmp/logo-serv.png" alt="" /></a></div>
-                        <div class="tit-serv"><a href="#">Мегаплан</a></div>
-                        <p>Система управления бизнесом: CRM, контроль сотрудников, проектов и поручений, финансы</p>
-                        <div class="link-serv"><a target="_blank" href="#">Веб-сайт</a></div>
-                        <div class="avail-serv">
-                            <div class="stars">
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                            </div>
-                            <span>(18)</span>
+                    <div class="slide">
+                        <div class="item-f">
+                            <div class="img-fc"><a href="#"><img src="images_tmp/factory2.png" alt="" /></a></div>
+                            <div class="tit-fc"><a href="#">Бест Гранит</a></div>
+                            <div class="locat-fc">Нур Султан</div>
                         </div>
-                        <div class="bt-serv">
-                            <div class="but-frame"><a href="#">Сравнить с Roistat</a></div>
-                            <div class="but-fav-serv"><a href="#"></a></div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="item-f">
+                            <div class="img-fc"><a href="#"><img src="images_tmp/factory3.png" alt="" /></a></div>
+                            <div class="tit-fc"><a href="#">Северский<br> гранитный карьер</a></div>
+                            <div class="locat-fc">Павлодар</div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="item-f">
+                            <div class="img-fc"><a href="#"><img src="images_tmp/factory-none.jpg" alt="" /></a></div>
+                            <div class="tit-fc"><a href="#">Бест Гранит</a></div>
+                            <div class="locat-fc">Нур Султан</div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="item-f">
+                            <div class="img-fc"><a href="#"><img src="images_tmp/factory1.png" alt="" /></a></div>
+                            <div class="tit-fc"><a href="#">Северский<br> гранитный карьер</a></div>
+                            <div class="locat-fc">Алма-Ата</div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="item-f">
+                            <div class="img-fc"><a href="#"><img src="images_tmp/factory2.png" alt="" /></a></div>
+                            <div class="tit-fc"><a href="#">Бест Гранит</a></div>
+                            <div class="locat-fc">Нур Султан</div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="item-f">
+                            <div class="img-fc"><a href="#"><img src="images_tmp/factory3.png" alt="" /></a></div>
+                            <div class="tit-fc"><a href="#">Северский<br> гранитный карьер</a></div>
+                            <div class="locat-fc">Павлодар</div>
                         </div>
                     </div> 
-                </div>   
+                </div>
             </div>
-        </div><!--content-->
+        </div>
 	</div><!--main-->
 	
 <!--*******************footer************************-->
-	<div class="footer">
+	<footer>
 		<div class="cont-f">
-			<div class="top-footer">
-            	<div class="left-footer">
-                	<div class="logo-f"><a href="/"><img src="images/logo-f.png" alt="" /></a></div>
-                    <div class="copy">Все права защищены ©, 2021</div>
-                    <div class="lang-f for-desctop">
-                   		<div class="head-lang">Русский язык</div> 
-                        <div class="drop-lang">
-                        	<ul>
-                            	<li><a href="#">English</a></li>
-                                <li><a href="#">Spanish</a></li>
-                            </ul>
+        	<div class="top-footer">
+                <div class="footer-left">
+                    <div class="logo-f"><a href="/">Factories.kz</a></div>
+                </div>
+                
+                <div class="footer-right">
+                	<div class="menu-f">
+                    	<ul>
+                            <li><a href="#">По отраслям</a></li>
+                            <li><a href="#">По регионам</a></li>
+                            <li><a href="#">Публикации</a></li>
+                        </ul>
+                        
+                    	<ul>
+                            <li><a href="#">О сайте</a></li>
+                            <li><a href="#">Реклама</a></li>
+                            <li><a href="#">Правила сайта</a></li>
+                        </ul>
+                        
+                    	<ul>
+                            <li><span>Все заводы</span></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                        
+                        <div class="info-f">
+                            <div class="mail-f"><a href="mailto:">info@factories.kz</a></div>
+                            <div class="add-factory-f"><a href="#">Добавить предприятие</a></div>
                         </div>
                     </div>
                 </div>
-
-				<div class="menu-f">
-                	<ul>
-                        <li><span>Сервисы</span></li>
-                        <li><a href="#">Отзыв</a></li>
-                        <li><a href="#">Публикации</a></li>
-                        <li><a href="#">Интеграторы</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Добавить сервис</a></li>
-                        <li><a href="#">Добавить отзыв</a></li>
-                        <li><a href="#">Прислать кейс</a></li>
-                        <li><a href="#">Добавить интегратора</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Рубрикатор</a></li>
-                        <li><a href="#">Сравнение сервисов</a></li>
-                        <li><a href="#">Все сервисы</a></li>
-                        <li><a href="#">Все интеграторы</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">О проекте</a></li>
-                        <li><a href="#">Реклама</a></li>
-                        <li><a href="#">Пользовательское соглашение</a></li>
-                    </ul>
-                </div> 
-                
-                <div class="lang-f for-mobile">
-                    <div class="head-lang"><span>Русский язык</span></div> 
-                    <div class="drop-lang">
-                        <ul>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Spanish</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="right-footer">
-                	<div class="soc-f">
-                    	<ul>
-                        	<li class="item1"><a target="_blank" href="#"></a></li>
-                            <li class="item2"><a target="_blank" href="#"></a></li>
-                            <li class="item3"><a target="_blank" href="#"></a></li>
-                            <li class="item4"><a target="_blank" href="#"></a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rucont"><a target="_blank" href="#"><img src="images/rucontent.svg" alt="" /></a></div>
-                </div>
             </div>
             
-            <div class="text-f">Цены собраны из открытых источников и могут отличаться действительных</div>
+            <div class="bot-footer">
+            	<div class="copy">© Factories.kz, 2021</div>
+                
+                <div class="agree">
+                	<a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
 		</div>
-	</div><!--footer-->
-    
-    <div id="input" class="pop">
-        <div class="tit-pop">Вход</div>
-        <form>
-            <div class="field-pop"><input type="text" placeholder="e-mail" /></div>
-            <div class="field-pop"><input type="text" placeholder="Пароль" /></div>
-            <div class="forgot"><a data-fancybox href="#forgot">Восстановить пароль</a></div>
-            <div class="but-pop"><button type="submit">Войти</button></div>
-        </form>
-        <div class="ask-pop">Нет аккаунта? <a href="#">Зарегистрироваться</a></div>
-    </div>  
-    
-    <div id="forgot" class="pop">
-        <div class="tit-pop">Восстановить пароль</div>
-        <form>
-            <div class="field-pop"><input type="text" placeholder="e-mail" /></div>
-			<div class="capcha"><img src="images_tmp/capcha.jpg" alt="" /></div>
-            <div class="but-pop"><button type="submit">Отправить</button></div>
-        </form>
-    </div>
+	</footer><!--footer-->
 </body>
 </html>

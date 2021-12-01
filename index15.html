@@ -2,500 +2,242 @@
 <html lang="ru"> 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-	<title>Интегратор</title> 
+	<title>Добавление новой компании</title> 
 	<meta name="description" content="" /> 
 	<meta name="keywords" content=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
 	<link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
 	<link rel="stylesheet" href="template_styles.css" type="text/css" />
-    <script src="js/jquery.selectbox.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.selectbox.min.js"></script>
 	<script src="js/slick.min.js"></script>
     <script src="js/jquery.nav.js"></script>
-    <script src="js/rating_simple.js"></script>
+	<script src="js/jquery.MultiFile.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<div class="main main2">
-        <div class="wr-search">
-            <div class="panel-search">
-                <form>
-                    <div class="body-search">
-                        <div class="field-ss"><input type="text" placeholder="Найти"/></div>
-                        <div class="but-s">
-                            <button type="submit">Найти</button>
-                        </div>
-                    </div>
-                </form>
-    
-                <div class="close-search"></div>
-            </div>
-        </div>
-		
-    	<div class="panel-menu-mobile">
-        	<div class="top-panel-menu">
-        		<div class="tit-panel">Меню</div>
-                <div class="close-menu"></div>
-            </div>
-            
-            <div class="search-panel">
+	<div class="main">
+    	<div class="panel-search">
+        	<div class="in-panel-search">
             	<form>
-                	<div class="filed-search-p">
-                    	<input type="text" placeholder="Поиск" />
-                        <button type="submit"></button>
-                    </div>
+                    <div class="field-search"><span class="close-search"></span> <input type="text" placeholder="Поиск по сайту" /></div>
+                    <div class="but-panel"><button type="submit"></button></div>
                 </form>
             </div>
-            
-            <div class="menu-panel-m">
-            	<ul>
-                    <li><a href="#">Сервисы</a></li>
-                    <li><a href="#">Рубрикатор</a></li>
-                    <li><a href="#">Интеграторы</a></li>
-                    <li><a href="#">Публикации</a></li>
-                </ul>
-            </div>
-            
-            <div class="add-avail-p"><a href="#">Добавить отзыв</a></div>
         </div>
-			
-		<header>
-        	<div class="logo"><a href="/"><img src="images/logo.png" alt="" /></a></div>
-            
-            <div class="menu-top">
-                <ul>
-                    <li><a href="#">Сервисы</a></li>
-                    <li><a href="#">Рубрикатор</a></li>
-                    <li><span>Интеграторы</span></li>
-                    <li><a href="#">Публикации</a></li>
-                </ul>
-            </div>
-            
-            <div class="search-head"><a href="#"></a></div>
-            
-            <div class="right-head">
-            	<div class="choice-h"><a href="#"><span>2</span></a></div>
-                <div class="favor-h"><a href="#"></a></div>
-            	<div class="but-coms-top"><a href="#">Добавить отзыв</a></div>
-				<div class="but-menu-mobile"></div>
-            </div>
-        </header>
         
-        <div class="wr-panel-top wr-panel-top2">
-            <div class="panel-top-page">
-                <div class="card-serv">
-               		<div class="img-card-serv"><img src="images_tmp/img-card-serv.jpg" alt="" /></div> 
-                    <div class="desc-card-serv">
-                    	<div class="top-card-serv">
-                        	<div class="tit-card-serv"><h1>Первый БИТ</h1></div>
-                            <div class="expert">Подтвержденная экспертиза</div>
-                        </div>
-                        <div class="avail-serv">
-                            <div class="stars">
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div></div>
-                            </div>
-                            <span>(3)</span>
-                        </div>
-                        <div class="town-card">Москва</div>
-                        <div class="buts-serv-card">
-                        	<div class="but-frame but-frame2"><a href="#">Веб-сайт</a></div>
-                        </div>
-                    </div>
+        <div class="wr-header">
+            <header>
+                <div class="logo"><a href="/">Factories.kz</a></div>
+				<div class="but-menu"></div>
+                <div class="menu-top">
+                    <ul>
+                        <li><a href="#">Производители</a></li>
+                        <li><a href="#">Рубрикатор</a></li>
+                        <li><a href="#">Публикации</a></li>
+                    </ul>
                 </div>
-            </div>
+                <div class="header-right">
+                    <div class="but-search"><a href="#"></a></div>
+                    <div class="add-factory"><a href="#">Добавить предприятие</a></div>
+                </div>
+            </header>
         </div>
         
         <div class="content">
-        	<div class="wr-menu-card">
-                <div class="menu-card nav-int floating">
-                    <ul id="nav">
-                        <li><a href="#desc">Описание</a></li>
-                        <li><a href="#service">Услуги</a></li>
-                        <li><a href="#public">Публикации</a></li>
-                        <li><a href="#comm">Отзывы</a></li>
-                    </ul>
-                </div>
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li>Добавить компанию</li>
+                </ul>
             </div>
             
-            <div class="body-card">
-            	<div id="desc" class="body-card-left">
-                	<div class="sm-tit">Описание</div>
-                    <p>«Первый БИТ» — это международная IT-компания, специализирующаяся на интеграции и разработке информационных систем для учёта и управления на предприятиях. Компания начала работать в 1997 году. В настоящее время компания насчитывает 70 офисов в 42 городах пяти стран, а в штате насчитывается около 5000 сотрудников.«Первый БИТ» комплексно подходит к решению ИТ-задач бизнеса, оказывает услуги как по разработке сайтов, корпоративных порталов, В2В-систем, так и по внедрению продуктов сторонних разработчиков. На счету компании более 150 тысяч внедрений в организациях всевозможных отраслей деятельности и размеров.</p>
-                	<div class="work-int"><span>Работает в:</span> Россия, Казахстан</div>
-                </div>
-            </div>
+            <h1>Добавление новой компании</h1>
             
-            <div id="service" class="service-card">
-            	<div class="title">Услуги</div>
-                <p>Специализируются на внедрении систем</p>
-                
-                <div class="list-service-card">
-                	<div class="item-serv-card">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt=""></a></div>
-                        <div class="tit-serv-card"><a href="#">1С:Предприятие 8</a></div>
+            <div class="text-add">Подайте заявку на добавление своего предприятия в наш справочник. Дождитесь рассмотрения заявки (1-2 рабочих дня). Узнайте результат рассмотрения воспользовавшись формой «Проверка статуса заявки на размещение».</div>
+        
+        	<div class="body-add">
+            	<div class="body-add-left">
+                	<div class="title-add">
+                    	<div class="tit">Заявка на размещение</div>
+                        <span>Обязательные поля отмечены <i>*</i></span>
                     </div>
                     
-                	<div class="item-serv-card">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt=""></a></div>
-                        <div class="tit-serv-card"><a href="#">Битрикс24</a></div>
-                    </div>
-                    
-                	<div class="item-serv-card">
-                    	<div class="img-int"><a href="#"><img src="images_tmp/img-card-serv.jpg" alt=""></a></div>
-                        <div class="tit-serv-card"><a href="#">Мегаплан</a></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="public" class="b-news last-news">
-                <div class="title">Публикации</div>
-            
-                <div class="list-news">
-                    <div class="item-news">
-                        <div class="img-news"><a href="#"><img src="images_tmp/img-news.jpg" alt="" /></a><div class="cat-news"><a href="#">Новость</a></div></div>
-                        <div class="tit-news"><a href="#">КУБ24 разработал виджет выставления счетов в amoCRM</a></div>
-                        <div class="date-news">10 апреля 2020</div>
-                    </div>
-                    
-                    <div class="item-news">
-                        <div class="img-news"><a href="#"><img src="images_tmp/img-news.jpg" alt="" /></a><div class="cat-news"><a href="#">Новость</a></div></div>
-                        <div class="tit-news"><a href="#">Мобильное приложение ITSM 365 получило голосовые заявки</a></div>
-                        <div class="date-news">10 апреля 2020</div>
-                    </div>
-                    
-                    <div class="item-news">
-                        <div class="img-news"><a href="#"><img src="images_tmp/img-news.jpg" alt="" /></a><div class="cat-news"><a href="#">Статья</a></div></div>
-                        <div class="tit-news"><a href="#">Мобильное приложение ITSM 365 получило голосовые заявки</a></div>
-                        <div class="date-news">10 апреля 2020</div>
-                    </div>  
-                </div>
-                
-                <div class="more-link"><a href="#">Показать ещё</a></div>
-            </div>
-            
-            <div class="panel-info-card">
-           		<ul>
-                    <li class="item1">Обновлено: 20.07.2021</li>
-                    <li class="item2">Просмотры: 23</li>
-                    <li class="item3"><a href="#">Сообщить об ошибке</a></li>
-                </ul> 
-            </div>
-            
-            <div id="comm" class="b-coms-card">
-            	<div class="b-coms-left">
-                    <div class="top-coms-card">
-                        <div class="title">Отзывы</div>
+                    <form>
+                    	<div class="field">
+                        	<label>Название компании</label>
+                            <input type="text" />
+                        </div>
                         
-                        <div class="rating-serv">
-                            <p>Сортировать</p>
+                    	<div class="field">
+                        	<label>Описание</label>
+                            <textarea></textarea>
+                        </div>
+                        
+                    	<div class="field">
+                        	<label>Слоган компании</label>
+                            <input type="text" />
+                        </div>
+                        
+						<div class="wrap-upload">
+                            <div class="file-upload">
+                                <div class="field"><input type="text" placeholder="Логотип компании"></div>
+                                <div class="button-add">Выбрать</div> 
+                            </div>
+                            <div class="text-upload">Файл должен быть меньше 1 МБ.<br> Допустимые типы: jpg, jpeg, png</div>
                             
-                            <div class="rat-serv">
-                                <select>
-                                    <option>по рейтингу</option>
-                                    <option>по дате</option>
-                                    <option>по популярности</option>
-                                </select>
-                            </div>
+                            <input type="file" id="logo" multiple="multiple" class="multi with-preview"/>
                         </div>
-                    </div>
-                    
-                    <div class="list-coms list-coms2">
-                        <div class="item-coms">
-                            <div class="body-coms">
-                                <div class="left-body-coms">
-                                    <div class="tit-coms">Топовый сервис!</div>
-                                    <div class="text-coms">отличный сервис для анализа маркетинга. строго следим за тремя каналами продвижения и во многом помогает даже отсеивать лишние рекламные запросы, не дающие конверсий. за счет этого удалось здорово оптимизировать рекламу и настроить бюджет. сложная интеграции и пришлось воевать с отделом продаж, не привыкшим расставлять метки в АМО. до конца их так и не победили, поэтому в нашем случае не вся информация по ROI корректна, но это вряд ли вина ройстат))а вот большой вес сервиса сильно замедляет работу сайта, надо либо в хостинг вкладываться, либо как-то со стороны ройстата продумать варианты ограниченного функционала, для небольших сайтов и лендингов не рекомендую этот сервис.</div>
-                                </div>
+                        
+						<div class="wrap-upload">
+                            <div class="file-upload">
+                                <div class="field"><input type="text" placeholder="Фотографии"></div>
+                                <div class="button-add">Добавить</div> 
                             </div>
-                            <div class="bottom-big-coms">
-                                <div class="left-bot-big-coms">
-                                    <div class="photo-coms-bot"><img src="images_tmp/photo-user3.jpg" alt="" /></div>
-                                    
-                                    <div class="desc-coms-bot">
-                                        <div class="info-user-coms">Георгий Поспелов <span>7 мая 2021</span></div>
-                                        <div class="info-company-coms">
-                                            <div class="tags-company">
-                                                <ul>
-                                                    <li><span>Менеджер по продажам</span></li>
-                                                    <li><span>Гостиничный бизнес</span></li>
-                                                    <li><span>Компания: 150-200 сотрудников</span></li>
-                                                </ul>
-                                            </div>
-                                            
-                                            <div class="voite-coms">
-                                                <div class="like"><a href="#">7</a></div>
-                                                <div class="dislike"><a href="#">2</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
+                            <div class="text-upload">Файл должен быть меньше 1 МБ.<br> Допустимые типы: jpg, jpeg, png</div>
+                            
+                            <input type="file" id="photo" multiple="multiple" class="multi with-preview"/>
+                        </div>
+                        
+                        <div class="select-type">
+                        	<select>
+                            	<option>Тип компании *</option>
+                                <option>Компания 1</option>
+                                <option>Компания 2</option>
+                                <option>Компания 3</option>
+                            </select>
+                        </div>
+                        
+                    	<div class="field">
+                        	<label>Название юр лица<span>*</span></label>
+                            <input type="text" />
+                        </div>
+                        
+                        <div class="tit-form">Контактные данные</div>
+                        <div class="text-grey">Данные будут опубликованы в карточке компании</div>
+                        
+                    	<div class="field">
+                        	<label>Адрес производства с указанием населенного пункта<span>*</span></label>
+                            <input type="text" />
+                        </div>
+                        
+                        <div class="fields">
+                            <div class="field">
+                                <label>Телефон</label>
+                                <input type="text" />
+                                <p>Если телефонов несколько, воспользуйтесь знаком "," для разделения</p>
+                            </div>
+                            <div class="field">
+                                <label>Почта</label>
+                                <input type="text" />
+                                <p>Если почтовых адресов несколько, воспользуйтесь знаком "," для разделения</p>
                             </div>
                         </div>
                         
-                        <div class="item-coms">
-                            <div class="body-coms">
-                                <div class="left-body-coms">
-                                    <div class="tit-coms">Аналитика для требовательных</div>
-                                    <div class="text-coms">Гарантия результата, простота подключения, ИСКЛЮЧИТЕЛЬНО ОТЗЫВЧИВАЯ ТЕХ ПОДДЕРЖКА, никаких скрытых платежей. Неудобный документооборот. Прекрасный сервис, жаль только манго его выкупил, боюсь снизят они его уровень до своего.</div>
-                                </div>
-                            </div>
-                            <div class="bottom-big-coms">
-                                <div class="left-bot-big-coms">
-                                    <div class="photo-coms-bot"><img src="images_tmp/photo-user.jpg" alt="" /></div>
-                                    
-                                    <div class="desc-coms-bot">
-                                        <div class="info-user-coms">Георгий Поспелов <span>7 мая 2021</span></div>
-                                        <div class="info-company-coms">
-                                            <div class="tags-company">
-                                                <ul>
-                                                    <li><span>Менеджер по продажам</span></li>
-                                                    <li><span>Гостиничный бизнес</span></li>
-                                                    <li><span>Компания: 150-200 сотрудников</span></li>
-                                                </ul>
-                                            </div>
-                                            
-                                            <div class="voite-coms">
-                                                <div class="like"><a href="#">7</a></div>
-                                                <div class="dislike"><a href="#">2</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="fields">
+                            <div class="field">
+                                <label>Сайт</label>
+                                <input type="text" />
+                                <p>Если веб-сайтов несколько, воспользуйтесь знаком "," для разделения</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="more-link"><a href="#">Показать ещё</a></div>
+                        
+                        <div class="tit-form">Информация о пользователе</div>
+                        <div class="text-grey">Данные не являются публичными</div>
+                        
+                    	<div class="field">
+                        	<label>Ваше имя<span>*</span></label>
+                            <input type="text" />
+                        </div>
+                        <div class="fields">
+                            <div class="field">
+                                <label>Должность<span>*</span></label>
+                                <input type="text" />
+                            </div>
+                            <div class="field">
+                                <label>E-mail<span>*</span></label>
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="button-f button-f-left"><button type="submit">Отправить на проверку</button></div>
+                        
+                        <div class="checkbox">
+                        	<input checked id="check" type="checkbox" />
+                            <label for="check">Интересует рекламное продвижение на портале</label>
+                        </div>
+                        <div class="assets">Нажимая кнопку "Отправить на проверку", Вы соглашаетесь с <a href="#">правилами</a> нашего сайта</div>
+                    </form>
+                    
+                    <div class="thanks">Ваша заявка отправлена на рассмотрение. Чтобы проверить статус заявки, воспользуйтесь формой справа.</div>
                 </div>
                 
-                <div class="b-coms-right">
-                	<div class="top-panel-coms">
-                    	<div class="stars">
-                        	<div class="active"></div>
-                            <div class="active"></div>
-                            <div class="active"></div>
-                            <div></div>
-                            <div></div>
+                <div class="body-add-right">
+                	<div class="tit">Проверить статус заявки</div>
+                    <div class="examinat">
+                        <div class="field">
+                            <label>Сайт</label>
+                            <input type="text" />
                         </div>
-                        <div class="big-rate">3 / 5</div>
-                        <div class="nums-c">16 отзывов</div>
+                        <div class="button-f"><button type="submit"><span>Проверить</span></button></div>
                     </div>
                     
-                    <div class="list-avail">
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail5" type="radio" />
-                                <label for="check-avail5">5</label>
-                            </div>
-                            <div class="scail-avail"><span style="width:48%"></span></div>
-                            <div class="rate-avail">7/16</div>
-                        </div>
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail4" type="radio" />
-                                <label for="check-avail4">4</label>
-                            </div>
-                            <div class="scail-avail"><span style="width:35%"></span></div>
-                            <div class="rate-avail">5/16</div>
-                        </div>
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail3" type="radio" />
-                                <label for="check-avail3">3</label>
-                            </div>
-                            <div class="scail-avail"><span style="width:30%"></span></div>
-                            <div class="rate-avail">4/16</div>
-                        </div>
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail2" type="radio" />
-                                <label for="check-avail2">2</label>
-                            </div>
-                            <div class="scail-avail"><span style="width:10%"></span></div>
-                            <div class="rate-avail">2/16</div>
-                        </div>
-                    	<div class="item-avail">
-                        	<div class="check-avail">
-                            	<input name="avail" id="check-avail1" type="radio" />
-                                <label for="check-avail1">1</label>
-                            </div>
-                            <div class="scail-avail"><span style="width:0%"></span></div>
-                            <div class="rate-avail">0/16</div>
-                        </div>
+                    <div class="result-ex">
+                    	<div class="site-ex">Сайт: abaydaulet.kz</div>
+                        <div class="status-ex">Статус заявки - <span>уже размещено</span></div>
                     </div>
-                    <div class="button button-avail"><button type="submit">Добавить отзыв</button></div>
                 </div>
             </div>
-            
-            <div id="analog" class="b-analog">
-            	<div class="top-analog">
-                	<div class="title">Другие интеграторы</div>
-                </div>
-                
-                <div class="list-serv">
-                    <div class="item-serv">
-                        <div class="logo-serv"><a href="#"><img src="images_tmp/logo-serv.png" alt="" /></a></div>
-                        <div class="tit-serv"><a href="#">Мегаплан</a></div>
-                        <p>Система управления бизнесом: CRM, контроль сотрудников, проектов и поручений, финансы</p>
-                        <div class="avail-serv">
-                            <div class="stars">
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                            </div>
-                            <span>(18)</span>
-                        </div>
-                        <div class="bt-serv">
-                            <div class="but-frame"><a href="#">Сравнить</a></div>
-                            <div class="but-fav-serv"><a href="#"></a></div>
-                        </div>
-                    </div>
-                    
-                    <div class="item-serv">
-                        <div class="logo-serv"><a href="#"><img src="images_tmp/logo-serv.png" alt="" /></a></div>
-                        <div class="tit-serv"><a href="#">Мегаплан</a></div>
-                        <p>Система управления бизнесом: CRM, контроль сотрудников, проектов и поручений, финансы</p>
-                        <div class="avail-serv">
-                            <div class="stars">
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div></div>
-                            </div>
-                            <span>(18)</span>
-                        </div>
-                        <div class="bt-serv">
-                            <div class="but-frame"><a href="#">Сравнить</a></div>
-                            <div class="but-fav-serv"><a href="#"></a></div>
-                        </div>
-                    </div>
-                    
-                    <div class="item-serv">
-                        <div class="logo-serv"><a href="#"><img src="images_tmp/logo-serv.png" alt="" /></a></div>
-                        <div class="tit-serv"><a href="#">Мегаплан</a></div>
-                        <p>Система управления бизнесом: CRM, контроль сотрудников, проектов и поручений, финансы</p>
-                        <div class="avail-serv">
-                            <div class="stars">
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                                <div class="active"></div>
-                            </div>
-                            <span>(18)</span>
-                        </div>
-                        <div class="bt-serv">
-                            <div class="but-frame"><a href="#">Сравнить</a></div>
-                            <div class="but-fav-serv"><a href="#"></a></div>
-                        </div>
-                    </div> 
-                </div>   
-            </div>
-        </div><!--content-->
+        </div>
 	</div><!--main-->
 	
 <!--*******************footer************************-->
-	<div class="footer">
+	<footer>
 		<div class="cont-f">
-			<div class="top-footer">
-            	<div class="left-footer">
-                	<div class="logo-f"><a href="/"><img src="images/logo-f.png" alt="" /></a></div>
-                    <div class="copy">Все права защищены ©, 2021</div>
-                    <div class="lang-f for-desctop">
-                   		<div class="head-lang">Русский язык</div> 
-                        <div class="drop-lang">
-                        	<ul>
-                            	<li><a href="#">English</a></li>
-                                <li><a href="#">Spanish</a></li>
-                            </ul>
+        	<div class="top-footer">
+                <div class="footer-left">
+                    <div class="logo-f"><a href="/">Factories.kz</a></div>
+                </div>
+                
+                <div class="footer-right">
+                	<div class="menu-f">
+                    	<ul>
+                            <li><a href="#">По отраслям</a></li>
+                            <li><a href="#">По регионам</a></li>
+                            <li><a href="#">Публикации</a></li>
+                        </ul>
+                        
+                    	<ul>
+                            <li><a href="#">О сайте</a></li>
+                            <li><a href="#">Реклама</a></li>
+                            <li><a href="#">Правила сайта</a></li>
+                        </ul>
+                        
+                    	<ul>
+                             <li><a href="#">Все заводы</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                        
+                        <div class="info-f">
+                            <div class="mail-f"><a href="mailto:">info@factories.kz</a></div>
+                            <div class="add-factory-f"><a href="#">Добавить предприятие</a></div>
                         </div>
                     </div>
                 </div>
-
-				<div class="menu-f">
-                	<ul>
-                        <li><a href="#">Сервисы</a></li>
-                        <li><a href="#">Отзыв</a></li>
-                        <li><a href="#">Публикации</a></li>
-                        <li><span>Интеграторы</span></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Добавить сервис</a></li>
-                        <li><a href="#">Добавить отзыв</a></li>
-                        <li><a href="#">Прислать кейс</a></li>
-                        <li><a href="#">Добавить интегратора</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Рубрикатор</a></li>
-                        <li><a href="#">Сравнение сервисов</a></li>
-                        <li><a href="#">Все сервисы</a></li>
-                        <li><a href="#">Все интеграторы</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">О проекте</a></li>
-                        <li><a href="#">Реклама</a></li>
-                        <li><a href="#">Пользовательское соглашение</a></li>
-                    </ul>
-                </div> 
-                
-                <div class="lang-f for-mobile">
-                    <div class="head-lang"><span>Русский язык</span></div> 
-                    <div class="drop-lang">
-                        <ul>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Spanish</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="right-footer">
-                	<div class="soc-f">
-                    	<ul>
-                        	<li class="item1"><a target="_blank" href="#"></a></li>
-                            <li class="item2"><a target="_blank" href="#"></a></li>
-                            <li class="item3"><a target="_blank" href="#"></a></li>
-                            <li class="item4"><a target="_blank" href="#"></a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rucont"><a target="_blank" href="#"><img src="images/rucontent.svg" alt="" /></a></div>
-                </div>
             </div>
             
-            <div class="text-f">Цены собраны из открытых источников и могут отличаться действительных</div>
+            <div class="bot-footer">
+            	<div class="copy">© Factories.kz, 2021</div>
+                
+                <div class="agree">
+                	<a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
 		</div>
-	</div><!--footer-->
-    
-    <div id="input" class="pop">
-        <div class="tit-pop">Вход</div>
-        <form>
-            <div class="field-pop"><input type="text" placeholder="e-mail" /></div>
-            <div class="field-pop"><input type="text" placeholder="Пароль" /></div>
-            <div class="forgot"><a data-fancybox href="#forgot">Восстановить пароль</a></div>
-            <div class="but-pop"><button type="submit">Войти</button></div>
-        </form>
-        <div class="ask-pop">Нет аккаунта? <a href="#">Зарегистрироваться</a></div>
-    </div>  
-    
-    <div id="forgot" class="pop">
-        <div class="tit-pop">Восстановить пароль</div>
-        <form>
-            <div class="field-pop"><input type="text" placeholder="e-mail" /></div>
-			<div class="capcha"><img src="images_tmp/capcha.jpg" alt="" /></div>
-            <div class="but-pop"><button type="submit">Отправить</button></div>
-        </form>
-    </div>
+	</footer><!--footer-->
 </body>
 </html>

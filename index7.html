@@ -2,596 +2,408 @@
 <html lang="ru"> 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-	<title>Сервисы</title> 
+	<title>Промышленные предприятия по городам и регионам</title> 
 	<meta name="description" content="" /> 
 	<meta name="keywords" content=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
 	<link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
 	<link rel="stylesheet" href="template_styles.css" type="text/css" />
-    <script src="js/jquery.selectbox.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.selectbox.min.js"></script>
 	<script src="js/slick.min.js"></script>
     <script src="js/jquery.nav.js"></script>
-    <script src="js/rating_simple.js"></script>
+	<script src="js/jquery.MultiFile.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<div class="main main2">
-        <div class="wr-search">
-            <div class="panel-search">
-                <form>
-                    <div class="body-search">
-                        <div class="field-ss"><input type="text" placeholder="Найти"/></div>
-                        <div class="but-s">
-                            <button type="submit">Найти</button>
-                        </div>
-                    </div>
-                </form>
-    
-                <div class="close-search"></div>
-            </div>
-        </div>
-		
-    	<div class="panel-menu-mobile">
-        	<div class="top-panel-menu">
-        		<div class="tit-panel">Меню</div>
-                <div class="close-menu"></div>
-            </div>
-            
-            <div class="search-panel">
+	<div class="main">
+    	<div class="panel-search">
+        	<div class="in-panel-search">
             	<form>
-                	<div class="filed-search-p">
-                    	<input type="text" placeholder="Поиск" />
-                        <button type="submit"></button>
-                    </div>
+                    <div class="field-search"><span class="close-search"></span> <input type="text" placeholder="Поиск по сайту" /></div>
+                    <div class="but-panel"><button type="submit"></button></div>
                 </form>
             </div>
-            
-            <div class="menu-panel-m">
-            	<ul>
-                    <li><a href="#">Сервисы</a></li>
-                    <li><a href="#">Рубрикатор</a></li>
-                    <li><a href="#">Интеграторы</a></li>
-                    <li><a href="#">Публикации</a></li>
-                </ul>
-            </div>
-            
-            <div class="add-avail-p"><a href="#">Добавить отзыв</a></div>
-        </div>
-		
-    	<div class="wr-panel-action">
-    		<div class="panel-action">Месяц бесплатного использования тарифа «Базовый» от Альбато. <div class="close-p"></div></div>
         </div>
         
-		<header>
-        	<div class="logo"><a href="/"><img src="images/logo.png" alt="" /></a></div>
-            
-            <div class="menu-top">
-                <ul>
-                    <li><span>Сервисы</span></li>
-                    <li><a href="#">Рубрикатор</a></li>
-                    <li><a href="#">Интеграторы</a></li>
-                    <li><a href="#">Публикации</a></li>
-                </ul>
-            </div>
-            
-            <div class="search-head"><a href="#"></a></div>
-            
-            <div class="right-head">
-            	<div class="choice-h"><a href="#"><span>2</span></a></div>
-                <div class="favor-h"><a href="#"></a></div>
-            	<div class="but-coms-top"><a href="#">Добавить отзыв</a></div>
-				<div class="but-menu-mobile"></div>
-            </div>
-        </header>
-        
-        <div class="wr-panel-top">
-            <div class="panel-top-page">
-                <div class="panel-top-left">
-                    <div class="breadcrumbs">
-                        <ul>
-                            <li><a href="/">Главная</a></li>
-                        </ul>
-                    </div>
-                    
-                    <h1>Все сервисы</h1>
+        <div class="wr-header">
+            <header>
+                <div class="logo"><a href="/">Factories.kz</a></div>
+				<div class="but-menu"></div>
+                <div class="menu-top">
+                    <ul>
+                        <li><a href="#">Производители</a></li>
+                        <li><span>Рубрикатор</span></li>
+                        <li><a href="#">Публикации</a></li>
+                    </ul>
                 </div>
-                
-                <div class="but-coms-p"><a href="#">Отзывы</a></div>
-            </div>
+                <div class="header-right">
+                    <div class="but-search"><a href="#"></a></div>
+                    <div class="add-factory"><a href="#">Добавить предприятие</a></div>
+                </div>
+            </header>
         </div>
         
-        <div class="content">
-        	<div class="body-content">
-            	<div class="content-left">
-                	<div class="b-sort-serv">
-                    	<div class="but-filters"><a class="scroll" href="#filters">Фильтры</a></div>
-                    	<div class="result-search-serv">Найдено 40 сервисов</div>
+		<div class="content">
+        	<div class="breadcrumbs">
+            	<ul>
+                	<li><a href="/">Главная</a></li> 
+                	<li>Промышленные предприятия по городам и регионам</li>
+                </ul>
+            </div>
+            
+        	<h1>Промышленные предприятия по городам и<br> регионам</h1>
+            
+            <div class="tabs-tb tabs-region">
+            	<div class="nav-tabs-tb nav-region">
+                	<ul>
+                        <li class="active"><a href="#">По отраслям</a></li>
+                        <li><a href="#">По регионам</a></li>
+                    </ul>
+                </div>
+            
+            	<div class="cont-tabs-tb cont-region">
+                	<div class="tab-tb tab-region">
+                    	<div class="search-region">
+                        	<form>
+                            	<div class="field"><input type="text" placeholder="Название города или области" /></div>
+                                <div class="button-f"><button type="submit"><span>Найти</span></button></div>
+                            </form>
+                        </div>
                         
-                        <div class="rating-serv">
-                        	<p>Сортировать</p>
+                        <div class="b-center">
+                        	<div class="tit">Крупные промышленные центры</div>
+                            <div class="list-center">
+                            	<ul>
+                                    <li><a href="#">(165) Москва</a></li>
+                                    <li class="active"><a href="#">(144) Санкт-Петербург</a></li>
+                                    <li><a href="#">(67) Челябинск</a></li>
+                                    <li><a href="#">(67) Екатеринбург</a></li>
+                                    <li><a href="#">(52) Барнаул</a></li>
+                                    <li><a href="#">(47) Новосибирск</a></li>
+                                    <li><a href="#">(23) Белгород</a></li>
+                                    <li><a href="#">(29) Владимир</a></li>
+                                    <li><a href="#">(25) Волгоград</a></li>
+                                    <li><a href="#">(22) Вологда</a></li>
+                                    <li><a href="#">(43) Иваново</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="b-region">
+                        	<div class="tit">Региональные промышленные центры</div>
                             
-                            <div class="rat-serv">
-                                <select>
-                                    <option>по рейтингу</option>
-                                    <option>по цене</option>
-                                    <option>по качеству</option>
-                                </select>
+                            <div class="list-region">
+                            	<ul>
+                                    <li><span>(70)</span> <a href="#">Алтайский край</a></li>
+                                    <li><span>(10)</span> <a href="#">Амурская область</a></li>
+                                    <li><span>(18)</span> <a href="#">Архангельская область</a></li>
+                                    <li><span>(8)</span> <a href="#">Астраханская область</a></li>
+                                    <li><span>(53)</span> <a href="#">Белгородская область</a></li>
+                                    <li><span>(33)</span> <a href="#">Брянская область</a></li>
+                                </ul>
+                                <ul>
+                                    <li><span>(1)</span> <a href="#">Михайловское</a></li>
+                                    <li><span>(3)</span> <a href="#">Новоалтайск</a></li>
+                                    <li><span>(1)</span> <a href="#">Поспелиха</a></li>
+                                    <li><span>(2)</span> <a href="#">Рубцовск</a></li>
+                                    <li><span>(1)</span> <a href="#">Славгород</a></li>
+                                    <li><span>(1)</span> <a href="#">Смоленское</a></li>
+                                </ul>
+                                <ul>
+                                    <li><span>(1)</span> <a href="#">Белогорск</a></li>
+                                    <li><span>(1)</span> <a href="#">Новобурейский</a></li>
+                                    <li><span>(1)</span> <a href="#">Свободный</a></li>
+                                    <li><span>(1)</span> <a href="#">Сковородино</a></li>
+                                    <li><span>(1)</span> <a href="#">Шимановск</a></li>
+                                    <li><span>(7)</span> <a href="#">Шебекено</a></li>
+                                </ul>
+                                <ul>
+                                    <li><span>(3)</span> <a href="#">Алексеевка</a></li>
+                                    <li><span>(23)</span> <a href="#">Белгород</a></li>
+                                    <li><span>(1)</span> <a href="#">Бирюч</a></li>
+                                    <li><span>(2)</span> <a href="#">Борисовка</a></li>
+                                    <li><span>(1)</span> <a href="#">Валуйки</a></li>
+                                    <li><span>(1)</span> <a href="#">Волоконовка</a></li>
+                                </ul>
+                                <ul>
+                                    <li><span>(1)</span> <a href="#">Грайворон</a></li>
+                                    <li><span>(3)</span> <a href="#">Губкин</a></li>
+                                    <li><span>(1)</span> <a href="#">Новый Оскол</a></li>
+                                    <li><span>(1)</span> <a href="#">Ракитное</a></li>
+                                    <li><span>(10)</span> <a href="#">Старый Оскол</a></li>
+                                    <li><span>(1)</span> <a href="#">Чернянка</a></li>
+                                </ul>
+                                <ul>
+                                    <li><span>(1)</span> <a href="#">Бабыкино</a></li>
+                                    <li><span>(1)</span> <a href="#">Балабаново</a></li>
+                                    <li><span>(2)</span> <a href="#">Боровск</a></li>
+                                    <li><span>(19)</span> <a href="#">Барнаул</a></li>
+                                    <li><span>(2)</span> <a href="#">Бочкари</a></li>
+                                    <li><span>(2)</span> <a href="#">Бийск</a></li>
+                                </ul>
+                                <ul>
+                                    <li><span>(4)</span> <a href="#">Кондрово</a></li>
+                                    <li><span>(3)</span> <a href="#">Людиново</a></li>
+                                    <li><span>(4)</span> <a href="#">Малоярославец</a></li>
+                                    <li><span>(1)</span> <a href="#">Медынь</a></li>
+                                    <li><span>(2)</span> <a href="#">Обнинск</a></li>
+                                    <li><span>(1)</span> <a href="#">Сосенский</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="b-region">
+                        	<div class="tit">Регионы</div>
+                            
+                            <div class="list-region">
+                            	<ul>
+                                    <li><span>(70)</span> <a href="#">Алтайский край</a></li>
+                                    <li><span>(10)</span> <a href="#">Амурская область</a></li>
+                                    <li><span>(18)</span> <a href="#">Архангельская область</a></li>
+                                    <li><span>(8)</span> <a href="#">Астраханская область</a></li>
+                                    <li><span>(53)</span> <a href="#">Белгородская область</a></li>
+                                    <li><span>(33)</span> <a href="#">Брянская область</a></li>
+                                </ul>
+                            	<ul>
+                                    <li><span>(75)</span> <a href="#">Владимирская область</a></li>
+                                    <li><span>(49)</span> <a href="#">Волгоградская область</a></li>
+                                    <li><span>(48)</span> <a href="#">Вологодская область</a></li>
+                                    <li><span>(43)</span> <a href="#">Воронежская область</a></li>
+                                    <li><span>(3)</span> <a href="#">Еврейская автономная область</a></li>
+                                    <li><span>(9)</span> <a href="#">Забайкальский край</a></li>
+                                </ul>
+                            	<ul>
+                                    <li><span>(62)</span> <a href="#">Ивановская область</a></li>
+                                    <li><span>(36)</span> <a href="#">Иркутская область</a></li>
+                                    <li><span>(18)</span> <a href="#">Калининградская область</a></li>
+                                    <li><span>(46)</span> <a href="#">Калужская область</a></li>
+                                    <li><span>(27)</span> <a href="#">Кемеровская область</a></li>
+                                    <li><span>(43)</span> <a href="#">Кировская область</a></li>
+                                </ul>
+                            	<ul>
+                                    <li><span>(34)</span> <a href="#">Костромская область</a></li>
+                                    <li><span>(95)</span> <a href="#">Краснодарский край</a></li>
+                                    <li><span>(45)</span> <a href="#">Красноярский край</a></li>
+                                    <li><span>(24)</span> <a href="#">Курганская область</a></li>
+                                    <li><span>(23)</span> <a href="#">Курская область</a></li>
+                                    <li><span>(217)</span> <a href="#">Ленинградская область</a></li>
+                                </ul> 
                             </div>
                         </div>
                     </div>
                     
-                    <div class="filter-serv">
-                    	<form>
-                        	<div class="in-filter-serv">
-                            	<div class="sel-serv">
-                                	<select>
-                                    	<option>Категория</option>
-                                        <option>Продажи</option>
-                                        <option>Продажи</option>
-                                        <option>Продажи</option>
-                                        <option>Продажи</option>
-                                    </select>
+                    <div class="tab-tb tab-region">
+                    	<div class="b-equipment">
+                        	<div class="tit">Авиационная промышленность</div>
+                            
+                            <div class="list-equip">
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Вертолетостроение (4)</div>
+                                    <ul>
+                                        <li><a href="#">Обслуживание и ремонт вертолетов (2)</a></li>
+                                        <li><a href="#">Производство вертолетов (1)</a></li>
+                                        <li><a href="#">Разработка вертолетов (2) </a></li>
+                                    </ul>
                                 </div>
                                 
-                            	<div class="sel-serv sel-serv2">
-                                	<select>
-                                    	<option>Подкатегория</option>
-                                        <option>Автоматизация продаж</option>
-                                        <option>Управление лидами</option>
-                                        <option>Клиентские базы</option>
-                                        <option>Управление контактами </option>
-                                    </select>
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Двигателе- и агрегатостроение для авиации (5)</div>
+                                    <ul>
+                                        <li><a href="#">Разработка, производство агрегатов, приборов, запчастей для авиации (5)</a></li>
+                                        <li><a href="#">Разработка, производство двигателей для авиации (1)</a></li>
+                                    </ul>
+                                </div>
+                                
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Самолетостроение (6)</div>
+                                    <ul>
+                                        <li><a href="#">Обслуживание и ремонт самолетов (6)</a></li>
+                                        <li><a href="#">Производство самолетов (2)</a></li>
+                                        <li><a href="#">Разработка самолетов (1)</a></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        
+                    	<div class="b-equipment">
+                        	<div class="tit">Горная промышленность</div>
+                            
+                            <div class="list-equip">
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Добыча нерудного сырья (10)</div>
+                                    <ul>
+                                        <li><a href="#">Добыча драгоценных и полудрагоценных камней (1)</a></li>
+                                        <li><a href="#">Добыча и обогащение горнохимического сырья (6)</a></li>
+                                        <li><a href="#">Добыча и обогащение нерудного индустриального сырья (4)</a></li>
+                                    </ul>
+                                </div>
+                                
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Добыча руд черных, цветных и других металлов (19)</div>
+                                    <ul>
+                                        <li><a href="#">Добыча и обогащение руд цветных металлов (3)</a></li>
+                                        <li><a href="#">Добыча и обогащение руд чёрных металлов (12)</a></li>
+                                        <li><a href="#">Добыча и обогащение урана (2)</a></li>
+                                        <li><a href="#">Добыча, переработка драгоценных металлов (5)</a></li>
+                                    </ul>
+                                </div>
+                                
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Торфяная и сланцевая промышленность (7)</div>
+                                    <ul>
+                                        <li><a href="#">Добыча и переработка торфа (3)</a></li>
+                                        <li><a href="#">Производство торфобрикетов (7)</a></li>
+                                    </ul>
                                 </div> 
                                 
-                            	<div class="sel-serv">
-                                	<select>
-                                    	<option>Отрасль</option>
-                                        <option>Продажи</option>
-                                        <option>Продажи</option>
-                                        <option>Продажи</option>
-                                        <option>Продажи</option>
-                                    </select>
-                                </div>
-                                
-                            	<div class="sel-serv sel-serv3">
-                                	<select>
-                                    	<option>Стоматология</option>
-                                        <option>Подотрасль</option>
-                                        <option>Подотрасль</option>
-                                        <option>Подотрасль</option>
-                                        <option>Подотрасль</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="but-search-f"><button type="submit">Найти</button></div>
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Угольная промышленность (14)</div>
+                                    <ul>
+                                        <li><a href="#">Добыча и обогащение угля (14)</a></li>
+                                        <li><a href="#">Производство угольных брикетов (2)</a></li>
+                                    </ul>
+                                </div> 
                             </div>
-                        </form>
-                    </div>
+                        </div>
                     
-                    <div class="list-search-serv">
-                    	<div class="item-search-serv">
-                        	<div class="but-fav-serv"><a href="#"></a></div>
-                        	<div class="top-item-search">
-                            	<div class="img-item-search"><img src="images_tmp/img-serv1.jpg" alt="" /></div>
-                                <div class="desc-item-search">
-                                	<div class="tit-line-item-search">
-                                    	<div class="tit-item-search"><a href="#">Мегаплан</a></div>
-                                        <div class="leader-it"><img src="images/ico-leader.svg" alt="" /></div>
-                                        <div class="link-item-search"><a href="#"></a></div>
-                                        <div class="premium">Premium</div>
-                                    </div>
-                                    <div class="avail-serv">
-                                        <div class="stars">
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div></div>
-                                        </div>
-                                        <span>(18)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tit-desc-s">Система управления бизнесом</div>
-                            <p>Мегаплан — это система управления бизнесом. Неважно, большой бизнес или маленький и в чём его суть. Важно, что бизнес работает, и им надо управлять. Уникальность Мегаплана в том, что это CRM система и управление проектами в одной программе.</p>
-                            <div class="bot-item-search">
-                            	<div class="link-meg"><a href="#">Читать подробнее про Мегаплан</a></div>
-                                
-                                <div class="buts-search">
-                                	<div class="but-frame"><a href="#">Веб-сайт</a></div>
-                                    <div class="but-grey"><a href="#">Сравнить</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    	<div class="item-search-serv">
-                        	<div class="but-fav-serv"><a href="#"></a></div>
-                        	<div class="top-item-search">
-                            	<div class="img-item-search"><img src="images_tmp/img-serv1.jpg" alt="" /></div>
-                                <div class="desc-item-search">
-                                	<div class="tit-line-item-search">
-                                    	<div class="tit-item-search"><a href="#">Мегаплан</a></div>
-                                        <div class="leader-it"><img src="images/ico-leader.svg" alt="" /></div>
-                                        <div class="link-item-search"><a href="#"></a></div>
-                                        <div class="premium">Premium</div>
-                                    </div>
-                                    <div class="avail-serv">
-                                        <div class="stars">
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div></div>
-                                        </div>
-                                        <span>(18)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tit-desc-s">Система управления бизнесом</div>
-                            <p>Система для управления предприятием. Она помогает автоматизировать торговлю и ресторанный бизнес, кафе, салон красоты, интернет-магазин и др.</p>
-                            <div class="bot-item-search">
-                            	<div class="link-meg"><a href="#">Читать подробнее про Мегаплан</a></div>
-                                
-                                <div class="buts-search">
-                                	<div class="but-frame"><a href="#">Веб-сайт</a></div>
-                                    <div class="but-grey"><a href="#">Сравнить</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    	<div class="item-search-serv">
-                        	<div class="but-fav-serv"><a href="#"></a></div>
-                        	<div class="top-item-search">
-                            	<div class="img-item-search"><img src="images_tmp/img-serv2.jpg" alt="" /></div>
-                                <div class="desc-item-search">
-                                	<div class="tit-line-item-search">
-                                    	<div class="tit-item-search"><a href="#">Мегаплан</a></div>
-                                        <div class="link-item-search"><a href="#"></a></div>
-                                        <div class="premium">Premium</div>
-                                    </div>
-                                    <div class="avail-serv">
-                                        <div class="stars">
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div></div>
-                                        </div>
-                                        <span>(18)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tit-desc-s">CRM-система для отделов продаж</div>
-                            <p>GEN CRM — это система для отделов продаж, сфокусированных на обработке входящих звонков, заявок с сайта, писем, online-чатов.</p>
-                            <div class="bot-item-search">
-                            	<div class="link-meg"><a href="#">Читать подробнее про Мегаплан</a></div>
-                                
-                                <div class="buts-search">
-                                	<div class="but-frame"><a href="#">Веб-сайт</a></div>
-                                    <div class="but-grey"><a href="#">Сравнить</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    	<div class="item-search-serv">
-                        	<div class="but-fav-serv"><a href="#"></a></div>
-                        	<div class="top-item-search">
-                            	<div class="img-item-search"><img src="images_tmp/img-serv4.jpg" alt="" /></div>
-                                <div class="desc-item-search">
-                                	<div class="tit-line-item-search">
-                                    	<div class="tit-item-search"><a href="#">Мегаплан</a></div>
-                                    </div>
-                                    <div class="avail-serv">
-                                        <div class="stars">
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div></div>
-                                        </div>
-                                        <span>(18)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tit-desc-s">Облачная система автоматизации ресторанного бизнеса.</div>
-                            <p>Quick Resto — это сервис с широкими возможностями по автоматизации ресторанного бизнеса. Система состоит из фронт-офиса и бэк-офиса с системой для автономной работы, CRM-структурой, складским учетом и механизмами отслеживания персонала.</p>
-                            <div class="bot-item-search">
-                            	<div class="link-meg"><a href="#">Читать подробнее про Мегаплан</a></div>
-                                
-                                <div class="buts-search">
-                                	<div class="but-frame"><a href="#">Веб-сайт</a></div>
-                                    <div class="but-grey"><a href="#">Сравнить</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    	<div class="item-search-serv">
-                        	<div class="but-fav-serv"><a href="#"></a></div>
-                        	<div class="top-item-search">
-                            	<div class="img-item-search"><img src="images_tmp/img-serv3.jpg" alt="" /></div>
-                                <div class="desc-item-search">
-                                	<div class="tit-line-item-search">
-                                    	<div class="tit-item-search"><a href="#">Мегаплан</a></div>
-                                    </div>
-                                    <div class="avail-serv">
-                                        <div class="stars">
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div></div>
-                                        </div>
-                                        <span>(18)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tit-desc-s">Система управления бизнесом</div>
-                            <p>Веб приложение и модули для облачных CRM для удобной и эффективной работы телефонных операторов, телемаркетологов со сценариями телефонных переговоров и данными CRM во время телефонных звонков.</p>
-                            <div class="bot-item-search">
-                                <div class="buts-search">
-                                	<div class="but-frame"><a href="#">Веб-сайт</a></div>
-                                    <div class="but-grey"><a href="#">Сравнить</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    	<div class="item-search-serv">
-                        	<div class="but-fav-serv"><a href="#"></a></div>
-                        	<div class="top-item-search">
-                            	<div class="img-item-search"><img src="images_tmp/img-serv4.jpg" alt="" /></div>
-                                <div class="desc-item-search">
-                                	<div class="tit-line-item-search">
-                                    	<div class="tit-item-search"><a href="#">Мегаплан</a></div>
-                                    </div>
-                                    <div class="avail-serv">
-                                        <div class="stars">
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div class="active"></div>
-                                            <div></div>
-                                        </div>
-                                        <span>(18)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tit-desc-s">Система управления бизнесом</div>
-                            <p>Мегаплан — это система управления бизнесом. Неважно, большой бизнес или маленький и в чём его суть. Важно, что бизнес работает, и им надо управлять. Уникальность Мегаплана в том, что это CRM система и управление проектами в одной программе.</p>
-                            <div class="bot-item-search">
-                                
-                                <div class="buts-search">
-                                	<div class="but-frame"><a href="#">Веб-сайт</a></div>
-                                    <div class="but-grey"><a href="#">Сравнить</a></div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
                     
-                    <div class="pages">
-                   		<ul>
-                            <li><span>1</span></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                        </ul> 
-                    </div>
-                </div>
-                
-                <div class="content-right">
-                	<div id="filters">
-                        <div class="block-checkbox">
-                            <div class="head-check"><span>Подбор по параметрам</span></div>
+                    	<div class="b-equipment">
+                        	<div class="tit">Легкая промышленность</div>
                             
-                            <div class="body-check">
-                                <ul>
-                                    <li>
-                                        <input id="check1" type="checkbox" />
-                                        <label for="check1">Лидер отрасли <img src="images/ico-leader.svg" alt="" /></label>
-                                    </li>
-                                </ul>
+                            <div class="list-equip">
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Кожевенно-меховая промышленность (20)</div>
+                                    <ul>
+                                        <li><a href="#">Добыча драгоценных и полудрагоценных камней (1)</a></li>
+                                        <li><a href="#">Добыча и обогащение горнохимического сырья (6)</a></li>
+                                        <li><a href="#">Добыча и обогащение нерудного индустриального сырья (4)</a></li>
+                                    </ul>
+                                </div>
+                                
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Обувное производство (20)</div>
+                                    <ul>
+                                        <li><a href="#">Добыча и обогащение руд цветных металлов (3)</a></li>
+                                        <li><a href="#">Добыча и обогащение руд чёрных металлов (12)</a></li>
+                                        <li><a href="#">Добыча и обогащение урана (2)</a></li>
+                                        <li><a href="#">Добыча, переработка драгоценных металлов (5)</a></li>
+                                    </ul>
+                                </div>
+                                
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Текстильная промышленность (59)</div>
+                                    <ul>
+                                        <li><a href="#">Валяльно-войлочная промышленность (5)</a></li>
+                                        <li><a href="#">Изготовление ковров и ковровых изделий (6)</a></li>
+                                        <li><a href="#">Льняная промышленность (5)</a></li>
+                                        <li><a href="#">Пенько-джутовая промышленность (3)</a></li>
+                                        <li><a href="#">Производство геотекстильных, нетканых материалов (5)</a></li>
+                                        <li><a href="#">Производство технических тканей (2)</a></li>
+                                        <li><a href="#">Пуховое производство (2)</a></li>
+                                        <li><a href="#">Сетевязальная промышленность (1)</a></li>
+                                        <li><a href="#">Пуховое производство (2)</a></li>
+                                        <li><a href="#">Валяльно-войлочная промышленность (5)</a></li>
+                                        <li><a href="#">Изготовление ковров и ковровых изделий (6)</a></li>
+                                        <li><a href="#">Льняная промышленность (5)</a></li>
+                                        <li><a href="#">Пенько-джутовая промышленность (3)</a></li>
+                                        <li><a href="#">Производство геотекстильных, нетканых материалов (5)</a></li>
+                                        <li><a href="#">Производство технических тканей (2)</a></li>
+                                        <li><a href="#">Пуховое производство (2)</a></li>
+                                        <li><a href="#">Сетевязальная промышленность (1)</a></li>
+                                        <li><a href="#">Пуховое производство (2)</a></li>
+                                    </ul>
+                                </div> 
+                                
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Кожевенно-меховая промышленность (20)</div>
+                                    <ul>
+                                        <li><a href="#">Добыча драгоценных и полудрагоценных камней (1)</a></li>
+                                        <li><a href="#">Добыча и обогащение горнохимического сырья (6)</a></li>
+                                        <li><a href="#">Добыча и обогащение нерудного индустриального сырья (4)</a></li>
+                                    </ul>
+                                </div> 
                             </div>
                         </div>
                         
-                        <div class="b-integr">
-                            <div class="tit-int">Интеграция с</div>
-                            <div class="field-int"><input type="text" placeholder="Название сервиса" /></div>
-                        </div>
-                        
-                        <div class="block-checkbox">
-                            <div class="head-check"><span>Платформы</span></div>
+                    	<div class="b-equipment">
+                        	<div class="tit">Ювелирная промышленность</div>
                             
-                            <div class="body-check">
-                                <ul>
-                                    <li>
-                                        <input id="check2" type="checkbox" />
-                                        <label for="check2">Облако</label>
-                                    </li>
-                                    <li>
-                                        <input id="check3" type="checkbox" />
-                                        <label for="check3">Мобильные приложения</label>
-                                    </li>
-                                    <li>
-                                        <input id="check4" type="checkbox" />
-                                        <label for="check4">Десктопный софт</label>
-                                    </li> 
-                                </ul>
+                            <div class="list-equip">
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Производство ювелирных изделий (19)</div>
+                                    <ul>
+                                        <li><a href="#">Обслуживание и ремонт вертолетов (2)</a></li>
+                                        <li><a href="#">Производство вертолетов (1)</a></li>
+                                        <li><a href="#">Разработка вертолетов (2)</a></li>
+                                    </ul>
+                                </div>
+                                
+                            	<div class="item-equip">
+                                	<div class="tit-equip">Янтарное производство (1)</div>
+                                    <ul>
+                                        <li><a href="#">Разработка, производство агрегатов, приборов, запчастей для авиации (5)</a></li>
+                                        <li><a href="#">Разработка, производство двигателей для авиации (1)</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="block-checkbox">
-                            <div class="head-check"><span>Модель оплаты</span></div>
-                            
-                            <div class="body-check">
-                                <ul>
-                                    <li>
-                                        <input id="check5" type="checkbox" />
-                                        <label for="check5">Есть бесплатные тарифы</label>
-                                    </li>
-                                    <li>
-                                        <input id="check6" type="checkbox" />
-                                        <label for="check6">Подписочная модель</label>
-                                    </li>
-                                    <li>
-                                        <input id="check7" type="checkbox" />
-                                        <label for="check7">Подписочная модель</label>
-                                    </li> 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                	</div>
                 </div>
             </div>
-            
-            <div class="sections">
-                <div class="title">Разделы</div>
-                
-                <div class="list-sections">
-                    <ul>
-                        <li><a href="#">Маркетинг</a></li>
-                        <li><a href="#">Работа с клиентами</a></li>
-                        <li><a href="#">SMM</a></li>
-                        <li><a href="#">SEO-продвижение</a></li>
-                        <li><a href="#">Покупка трафика</a></li>
-                        <li><a href="#">Монетизация</a></li>
-                        <li><a href="#">Контент-маркетинг</a></li>
-                        <li><a href="#">Дизайн и Мультимедиа</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Аналитика</a></li>
-                        <li><a href="#">Визуализация данных</a></li>
-                        <li><a href="#">Создание сайта</a></li>
-                        <li><a href="#">Разработка</a></li>
-                        <li><a href="#">Сервисы для приложений</a></li>
-                        <li><a href="#">Бизнес-управление</a></li>
-                        <li><a href="#">Музыка</a></li>
-                        <li><a href="#">Образование</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Управление проектами и планирование</a></li>
-                        <li><a href="#">Финансы</a></li>
-                        <li><a href="#">Бухгалтерия</a></li>
-                        <li><a href="#">Продажи</a></li>
-                        <li><a href="#">Розница</a></li>
-                        <li><a href="#">Юридический софт</a></li>
-                        <li><a href="#">Языки</a></li>
-                        <li><a href="#">Безопасность</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Работа с документами</a></li>
-                        <li><a href="#">Личная эффективность</a></li>
-                        <li><a href="#">Персонал</a></li>
-                        <li><a href="#">Коммуникации</a></li>
-                        <li><a href="#">Электронная коммерция</a></li>
-                        <li><a href="#">Логистика </a></li>
-                        <li><a href="#">Прочее</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div><!--content-->
+        </div>
 	</div><!--main-->
 	
 <!--*******************footer************************-->
-	<div class="footer">
+	<footer>
 		<div class="cont-f">
-			<div class="top-footer">
-            	<div class="left-footer">
-                	<div class="logo-f"><a href="/"><img src="images/logo-f.png" alt="" /></a></div>
-                    <div class="copy">Все права защищены ©, 2021</div>
-                    <div class="lang-f for-desctop">
-                   		<div class="head-lang">Русский язык</div> 
-                        <div class="drop-lang">
-                        	<ul>
-                            	<li><a href="#">English</a></li>
-                                <li><a href="#">Spanish</a></li>
-                            </ul>
+        	<div class="top-footer">
+                <div class="footer-left">
+                    <div class="logo-f"><a href="/">Factories.kz</a></div>
+                </div>
+                
+                <div class="footer-right">
+                	<div class="menu-f">
+                    	<ul>
+                            <li><a href="#">По отраслям</a></li>
+                            <li><span>По регионам</span></li>
+                            <li><a href="#">Публикации</a></li>
+                        </ul>
+                        
+                    	<ul>
+                            <li><a href="#">О сайте</a></li>
+                            <li><a href="#">Реклама</a></li>
+                            <li><a href="#">Правила сайта</a></li>
+                        </ul>
+                        
+                    	<ul>
+                             <li><a href="#">Все заводы</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                        
+                        <div class="info-f">
+                            <div class="mail-f"><a href="mailto:">info@factories.kz</a></div>
+                            <div class="add-factory-f"><a href="#">Добавить предприятие</a></div>
                         </div>
                     </div>
                 </div>
-
-				<div class="menu-f">
-                	<ul>
-                        <li><span>Сервисы</span></li>
-                        <li><a href="#">Отзыв</a></li>
-                        <li><a href="#">Публикации</a></li>
-                        <li><a href="#">Интеграторы</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Добавить сервис</a></li>
-                        <li><a href="#">Добавить отзыв</a></li>
-                        <li><a href="#">Прислать кейс</a></li>
-                        <li><a href="#">Добавить интегратора</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Рубрикатор</a></li>
-                        <li><a href="#">Сравнение сервисов</a></li>
-                        <li><a href="#">Все сервисы</a></li>
-                        <li><a href="#">Все интеграторы</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">О проекте</a></li>
-                        <li><a href="#">Реклама</a></li>
-                        <li><a href="#">Пользовательское соглашение</a></li>
-                    </ul>
-                </div> 
-                
-                <div class="lang-f for-mobile">
-                    <div class="head-lang"><span>Русский язык</span></div> 
-                    <div class="drop-lang">
-                        <ul>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Spanish</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="right-footer">
-                	<div class="soc-f">
-                    	<ul>
-                        	<li class="item1"><a target="_blank" href="#"></a></li>
-                            <li class="item2"><a target="_blank" href="#"></a></li>
-                            <li class="item3"><a target="_blank" href="#"></a></li>
-                            <li class="item4"><a target="_blank" href="#"></a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rucont"><a target="_blank" href="#"><img src="images/rucontent.svg" alt="" /></a></div>
-                </div>
             </div>
             
-            <div class="text-f">Цены собраны из открытых источников и могут отличаться действительных</div>
+            <div class="bot-footer">
+            	<div class="copy">© Factories.kz, 2021</div>
+                
+                <div class="agree">
+                	<a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
 		</div>
-	</div><!--footer-->
-    
-    <div id="input" class="pop">
-        <div class="tit-pop">Вход</div>
-        <form>
-            <div class="field-pop"><input type="text" placeholder="e-mail" /></div>
-            <div class="field-pop"><input type="text" placeholder="Пароль" /></div>
-            <div class="forgot"><a data-fancybox href="#forgot">Восстановить пароль</a></div>
-            <div class="but-pop"><button type="submit">Войти</button></div>
-        </form>
-        <div class="ask-pop">Нет аккаунта? <a href="#">Зарегистрироваться</a></div>
-    </div>  
-    
-    <div id="forgot" class="pop">
-        <div class="tit-pop">Восстановить пароль</div>
-        <form>
-            <div class="field-pop"><input type="text" placeholder="e-mail" /></div>
-			<div class="capcha"><img src="images_tmp/capcha.jpg" alt="" /></div>
-            <div class="but-pop"><button type="submit">Отправить</button></div>
-        </form>
-    </div>
+	</footer><!--footer-->
 </body>
 </html>
